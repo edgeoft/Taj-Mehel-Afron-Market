@@ -1,0 +1,27 @@
+@import '../../abstracts/variables';
+
+.bannerSliders-container {
+  .bannerSliders-container-heading-2 {
+    font-size: 4rem !important;
+  }
+
+  .bannerSliders-container-image {
+    max-height: 41.9rem;
+  }
+
+  @media (max-width: $screen-md) {
+    .bannerSliders-container-image {
+      height: 40rem;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .bannerSliders-container-heading-2 {
+      font-size: 2.4rem !important;
+      line-height: 2.8rem;
+    }
+    .bannerSliders-container-image {
+      height: 26.8rem;
+    }
+  }
+}

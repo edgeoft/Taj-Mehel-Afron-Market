@@ -1,0 +1,24 @@
+@import '../abstracts/variables';
+
+.requirementBanner-container {
+  .requirementBanner-container-heading-2 {
+    font-size: 4rem !important;
+  }
+
+  .requirementBanner-container-mobileImg {
+    max-height: 54.8rem;
+  }
+
+  @media (max-width: $screen-lg) {
+    .requirementBanner-container-heading-2 {
+      font-size: 3.2rem !important;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    .requirementBanner-container-heading-2 {
+      font-size: 2.4rem !important;
+      line-height: 2.8rem;
+    }
+  }
+}

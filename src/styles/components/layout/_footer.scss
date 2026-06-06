@@ -1,0 +1,46 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/colors';
+
+.footer {
+  background-color: $color-footer;
+  &-container {
+    padding-top: 6.4rem;
+    padding-bottom: 2.4rem;
+
+    @media (max-width: $screen-md) {
+      padding-top: 3.2rem;
+      padding-bottom: 1.6rem;
+    }
+
+    &-copyright {
+      text-align: center;
+      color: $color-neutral--7;
+      border-top: 1px solid $color-neutral--4;
+      margin-top: 2.4rem;
+      & > p {
+        padding: 2.4rem 0 0 0;
+      }
+    }
+    &-social {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3.2rem;
+      svg:hover {
+        scale: 1.1;
+      }
+    }
+    &-right {
+      &-title {
+        font-weight: 700 !important;
+      }
+      &-link {
+        color: $color-neutral--7;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

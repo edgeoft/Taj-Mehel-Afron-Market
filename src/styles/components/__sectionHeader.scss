@@ -1,0 +1,19 @@
+.sectionHeader-container {
+  .mantine-Tabs-list {
+    overflow: auto;
+    scrollbar-width: none; /* for Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* for Chrome, Safari, and Edge */
+    }
+  }
+  .view-all-btn {
+    .caret-icon {
+      transition: transform 0.2s ease-in-out; // Add a transition effect
+    }
+    &:hover {
+      .caret-icon {
+        transform: translateX(2px); // Move the icon 2px to the right on hover
+      }
+    }
+  }
+}

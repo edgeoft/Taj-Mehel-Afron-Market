@@ -1,0 +1,224 @@
+.checkout {
+  &-container {
+    max-width: 100vw;
+    width: 100%;
+    // background-color: red;
+    overflow-x: hidden;
+
+    @media (min-width: $screen-lg) {
+      width: auto;
+    }
+  }
+
+  &-paymentOpt {
+    &-container {
+      padding: 1.6rem 3.2rem 3.2rem;
+    }
+
+    &-radio {
+      & + div {
+        margin-top: 1.6rem;
+      }
+
+      & > div[role='radiogroup'] {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+      }
+
+      .mantine-Radio-root {
+        .mantine-Radio-body {
+          align-items: center;
+          // cursor: pointer !important;
+        }
+
+        .mantine-Radio-inner {
+          width: 12px;
+          height: 12px;
+
+          .mantine-Radio-radio {
+            border: 1.5px solid $color-neutral--9;
+            width: 12px;
+            height: 12px;
+          }
+
+          svg {
+            display: none;
+          }
+        }
+
+        .mantine-Radio-labelWrapper > .mantine-Radio-label {
+          color: $color-neutral--9;
+          padding-left: 0.8rem;
+          @include body-2;
+
+          @media (max-width: $screen-md) {
+            @include body-2-small;
+          }
+        }
+
+        &[data-checked='true'] {
+          .mantine-Radio-inner {
+            .mantine-Radio-radio {
+              border: 2px solid $secondary-color;
+              background-color: #d8e4d9;
+            }
+          }
+        }
+      }
+    }
+
+    &-left {
+      display: block;
+      padding: 1.6rem 2rem 2rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0 !important;
+
+      @media (min-width: $screen-lg) {
+        padding: 1.6rem 3.2rem 3.2rem;
+      }
+
+      @media (min-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &-right {
+    background-color: $color-neutral--1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+
+    @media (min-width: $screen-md) {
+      position: static;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: sticky;
+      top: 13.6rem;
+      width: auto;
+    }
+  }
+
+  &-reviewOrder {
+    @media (max-width: $screen-md) {
+      font-size: $font-size-14 !important;
+    }
+  }
+
+  &-changeOrderButton {
+    .mantine-Button-label {
+      color: $color-neutral--8;
+    }
+  }
+
+  &-orderContainer {
+    border: 0.1rem solid $color-neutral--3;
+    // padding: 1.6rem 2rem 2rem;
+    padding: 1.6rem 2rem 2rem 1rem;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      // padding: 1.6rem 3.2rem 3.2rem;
+      padding: 1.6rem 3.2rem 3.2rem 2.2rem;
+      width: auto;
+    }
+
+    .mantine-Carousel-viewport {
+      overflow: visible;
+    }
+  }
+
+  &-mastercardInput {
+    input {
+      padding-left: 36px !important;
+    }
+  }
+
+  &-delivery {
+    &-accordion {
+      margin-bottom: 1.6rem;
+
+      .mantine-Accordion-item {
+        border-color: $color-neutral--3;
+      }
+
+      .mantine-Accordion-control {
+        padding: 0 0 0.8rem;
+        border-bottom: 0.1rem solid $color-neutral--3;
+
+        @media (min-width: $screen-md) {
+          @include heading-5;
+        }
+
+        &:hover {
+          background-color: $color-neutral--1;
+        }
+      }
+
+      .mantine-Accordion-content {
+        padding: 1.6rem 0;
+      }
+
+      .mantine-Accordion-label {
+        color: $color-neutral--9;
+        padding: 0;
+        @include heading-4;
+
+        @media (min-width: $screen-md) {
+          @include heading-5;
+        }
+      }
+
+      .mantine-Accordion-chevron {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+
+        & > svg {
+          width: 2rem !important;
+          height: 2rem !important;
+          color: $color-neutral--9;
+        }
+
+        @media (min-width: $screen-lg) {
+          // display: none;
+        }
+      }
+
+      .mantine-Button-root[data-variant='secondary'] {
+        min-height: 4rem;
+      }
+    }
+  }
+
+  &-orderSummary {
+    border: 0.1rem solid $color-neutral--3;
+    padding: 1.6rem 2rem 2rem;
+    // width: 100%;
+    width: auto;
+
+    @media (min-width: $screen-lg) {
+      width: auto;
+      padding: 1.6rem 3.2rem 3.2rem;
+    }
+  }
+
+  &-country {
+    font-size: $font-size-12;
+    @media (min-width: $screen-md) {
+      font-size: $font-size-14;
+    }
+  }
+
+  &-drawer {
+    .mantine-Drawer-content {
+      padding: 2.4rem !important;
+    }
+  }
+}

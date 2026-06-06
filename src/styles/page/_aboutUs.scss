@@ -1,0 +1,48 @@
+.aboutUs {
+  &-imageContainer {
+    display: block;
+    height: 21.5rem;
+
+    @media (min-width: $screen-md) {
+      height: 31.5rem;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &-text-align {
+    text-align: center;
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+    }
+  }
+}
+
+.customerReview {
+  &-topLeft-abs {
+    margin: auto;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+
+    @media (min-width: $screen-md) {
+      top: 1.2rem;
+      left: 1.2rem;
+    }
+  }
+
+  &-bottomRight-abs {
+    margin: auto;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+
+    @media (min-width: $screen-md) {
+      bottom: 1.2rem;
+      right: 1.2rem;
+    }
+  }
+}

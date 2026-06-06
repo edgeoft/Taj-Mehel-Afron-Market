@@ -1,0 +1,108 @@
+.mantine-Select-root {
+  .mantine-Select-input {
+    border: 1px solid $color-neutral--4 !important;
+    padding: 1.4rem 1.2rem;
+    border-radius: 0 !important;
+    font-size: $font-size-14 !important;
+    font-weight: 400 !important;
+    color: $color-neutral--7 !important;
+    background-color: $color-neutral--2 !important;
+    height: 4.8rem !important;
+
+    &:focus {
+      border-color: $color-orange !important;
+    }
+
+    &::placeholder {
+      font-size: $font-size-14 !important;
+      font-weight: 400 !important;
+      color: $color-neutral--6;
+    }
+
+    &[data-error='true'] {
+      border-color: $color-error !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+    }
+
+    &[data-valid='true'] {
+      border-color: $color-success-dark !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+    }
+
+    &[data-disabled='true'] {
+      border-color: $color-neutral--4;
+      background: $color-neutral--2;
+      color: $color-neutral--5;
+      &::placeholder {
+        color: $color-neutral--6;
+      }
+      &:focus {
+        border-color: $color-neutral--4 !important;
+      }
+    }
+  }
+  .mantine-Select-label {
+    @include body-2;
+    color: $color-neutral--7;
+    &[data-disabled='true'] {
+      color: $color-neutral--5 !important;
+
+      .mantine-Select-required {
+        color: $color-neutral--5 !important;
+      }
+    }
+  }
+
+  .mantine-Select-error {
+    font-size: $font-size-10;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-top: 0.4rem;
+    color: $color-error;
+  }
+}
+
+.borderless-select {
+  display: flex;
+  align-items: center;
+  .mantine-Select-input {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 1rem;
+    height: 2.2rem !important;
+  }
+
+  .mantine-Select-label {
+    @include body-2;
+    color: $color-neutral--7;
+    font-weight: 700 !important;
+  }
+}
+
+.mantine-Popover-dropdown {
+  svg {
+    display: none;
+  }
+  .mantine-Select-option {
+    &[data-checked='true'] {
+      background: $color-yellow-foreground;
+      color: $primary-color;
+      &:focus,
+      &:hover {
+        // border-color: $color-neutral--3;
+        background: $color-yellow-foreground !important;
+        color: $primary-color !important;
+      }
+    }
+  }
+}

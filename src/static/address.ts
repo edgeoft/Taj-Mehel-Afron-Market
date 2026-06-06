@@ -1,0 +1,33 @@
+export const addresses = [
+  {
+    id: 1,
+    name: 'John Doe',
+    streetAddress: 'Kalimati',
+    city: 'Kathmandu',
+    phoneCode: '+977',
+    phoneNumber: '9841234567',
+    state: 'Bagmati',
+    zipCode: '44600',
+    isDefault: true,
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+    streetAddress: 'Kalimati',
+    city: 'Kathmandu',
+    phoneCode: '+977',
+    phoneNumber: '9841234567',
+    state: 'Bagmati',
+    zipCode: '44600',
+  },
+  {
+    id: 3,
+    name: 'Smriti Thapa',
+    streetAddress: 'Syuichatar',
+    city: 'Kathmandu',
+    phoneCode: '+977',
+    phoneNumber: '9841234567',
+    state: 'Bagmati',
+    zipCode: '44600',
+  },
+];

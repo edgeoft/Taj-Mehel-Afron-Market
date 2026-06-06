@@ -1,0 +1,112 @@
+.mobile__input-container {
+  flex-direction: column !important;
+  gap: 0.8rem !important;
+
+  .mantine-InputWrapper-label {
+    @include body-2;
+    color: $color-neutral--7;
+    &[data-disabled='true'] {
+      color: $color-neutral--5 !important;
+
+      .mantine-TextInput-required {
+        color: $color-neutral--5 !important;
+      }
+
+      .mantine-InputWrapper-required {
+        color: $color-neutral--5 !important;
+      }
+    }
+  }
+  .mantine-Input-wrapper {
+    width: 100%;
+  }
+
+  .disabled--input {
+    background-color: $color-neutral--2 !important;
+  }
+
+  .mobile__input {
+    display: flex;
+    align-items: center;
+    border: 1px solid $color-neutral--4 !important;
+    padding: 1.4rem 1.2rem;
+    border-radius: 0% !important;
+    height: 4.8rem !important;
+    background-color: $color-neutral--2 !important;
+
+    &[data-error='true'] {
+      border-color: $color-error !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+    }
+
+    &[data-valid='true'] {
+      border-color: $color-success-dark !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+    }
+
+    .mantine-Select-input {
+      margin-left: 0 !important;
+      border: none !important;
+      height: fit-content !important;
+      padding: 0%;
+      width: 6.5rem;
+      font-size: $font-size-14;
+      font-weight: 400;
+      color: $color-neutral--7 !important;
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+    }
+
+    .mantine-TextInput-input {
+      margin-left: 1.2rem;
+      border: none !important;
+      height: fit-content !important;
+      padding: 0 4.8rem 0 0;
+      font-size: $font-size-14;
+      font-weight: 400;
+      color: $color-neutral--7 !important;
+      border-top-right-radius: 50rem;
+      border-bottom-right-radius: 50rem;
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+      &[data-disabled='true'] {
+        border-color: $color-neutral--4;
+        background: $color-neutral--2;
+        color: $color-neutral--5;
+        &::placeholder {
+          color: $color-neutral--6;
+        }
+        &:focus {
+          border-color: $color-neutral--4 !important;
+        }
+      }
+    }
+
+    &:focus-within {
+      border-color: $color-orange !important;
+    }
+  }
+  .mantine-InputWrapper-error {
+    font-size: $font-size-10;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-top: 0.4rem;
+    color: $color-error;
+  }
+}

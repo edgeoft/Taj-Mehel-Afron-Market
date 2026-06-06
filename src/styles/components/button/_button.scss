@@ -1,0 +1,173 @@
+.mantine-Button-root {
+  font-size: $font-size-14 !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  line-height: 150%;
+  padding: 1rem 1.6rem !important;
+  height: 4rem !important;
+  border-radius: 0% !important;
+  transition: 0.3s linear all;
+
+  &:hover {
+    background-color: transparent !important;
+    color: $primary-color !important;
+    border: 1px solid $primary-color;
+  }
+
+  &[data-disabled] {
+    background-color: $color-neutral--6 !important;
+    color: $color-neutral--1 !important;
+    border: $color-neutral--6 !important;
+
+    &:hover {
+      background-color: $color-neutral--6 !important;
+    }
+  }
+
+  &[data-variant='outline'] {
+    background-color: transparent !important;
+    color: $primary-color !important;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background: $primary-color !important;
+      color: $color-neutral--1 !important;
+      border-color: $primary-color !important;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--6 !important;
+      border: 1px solid $color-neutral--6 !important;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+
+  &[data-variant='transparent'] {
+    color: $primary-color !important;
+    background: transparent;
+    border: none;
+    height: fit-content !important;
+    padding: 0 !important;
+
+    &:hover {
+      background: transparent;
+      color: $color-neutral--9 !important;
+      border: none;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--6 !important;
+      background: transparent !important;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+
+  &[data-variant='secondary-transparent'] {
+    color: $secondary-color !important;
+    background: transparent;
+    border: none;
+    height: fit-content !important;
+    padding: 0 !important;
+
+    &:hover {
+      background: transparent;
+      color: $color-neutral--9 !important;
+      border: none;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--6 !important;
+      background: transparent !important;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+
+  &[data-variant='secondary'] {
+    background-color: $secondary-color !important;
+    color: $color-neutral--1 !important;
+    border: 1px solid $secondary-color;
+
+    &:hover {
+      background: transparent !important;
+      color: $secondary-color !important;
+      border-color: $secondary-color !important;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--1 !important;
+      border: 1px solid $color-neutral--6 !important;
+      background-color: $color-neutral--6 !important;
+
+      &:hover {
+        background: $color-neutral--6 !important;
+      }
+    }
+  }
+
+  &[data-variant='secondary-outline'] {
+    background-color: transparent !important;
+    color: $secondary-color !important;
+    border: 1px solid $secondary-color;
+
+    &:hover {
+      background: $secondary-color !important;
+      color: $color-neutral--1 !important;
+      border-color: $secondary-color !important;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--6 !important;
+      border: 1px solid $color-neutral--6 !important;
+
+      &:hover {
+        background: transparent !important;
+      }
+    }
+  }
+
+  &[data-variant='danger'] {
+    background-color: $color-error !important;
+    color: $color-neutral--1 !important;
+    border: 1px solid $color-error;
+
+    &:hover {
+      background: transparent !important;
+      color: $color-error !important;
+      border-color: $color-error !important;
+    }
+
+    &[data-disabled] {
+      color: $color-neutral--1 !important;
+      border: 1px solid $color-neutral--6 !important;
+      background-color: $color-neutral--6 !important;
+
+      &:hover {
+        background: $color-neutral--6 !important;
+      }
+    }
+  }
+
+  .mantine-Button-inner {
+    .mantine-Button-section {
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    font-size: $font-size-12 !important;
+    padding: 0.7rem 1.6rem !important;
+    height: 3.1rem !important;
+  }
+}

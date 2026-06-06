@@ -1,0 +1,19 @@
+.counter {
+  &-container {
+    min-width: 10.2rem;
+  }
+  &-input {
+    .mantine-NumberInput-wrapper {
+      & > input {
+        border: none;
+        padding: 0;
+        // max-width: 1.7rem;
+        max-width: 3.3rem;
+        text-align: center;
+        font-size: $font-size-13;
+        font-weight: 800;
+        user-select: none;
+      }
+    }
+  }
+}

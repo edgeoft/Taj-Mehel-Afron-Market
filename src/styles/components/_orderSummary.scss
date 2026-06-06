@@ -1,0 +1,112 @@
+.orderSummary {
+  &-container {
+    background-color: $color-neutral--1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    z-index: 4;
+
+    padding: 1.6rem;
+    border: 0.1rem solid $color-neutral--3;
+
+    @media (min-width: $screen-md) {
+      padding: 1.6rem;
+      position: static;
+    }
+    @media (min-width: $screen-lg) {
+      padding: 1.6rem;
+      position: sticky;
+      top: 13.6rem;
+      width: auto !important;
+      min-width: 40.8rem !important;
+
+      padding: 1.6rem 3.2rem;
+      max-width: 50.8rem !important;
+    }
+    @media (min-width: $screen-xl) {
+      width: 50.8rem !important;
+    }
+  }
+
+  &-input {
+    width: calc(100% - 20px) !important;
+    .mantine-Input-input {
+      height: 4rem !important;
+    }
+    .mantine-MultiSelect-pillsList {
+      .mantine-MultiSelect-pill[data-variant='default'] {
+        & + input {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-accordion {
+    margin-bottom: 1.6rem;
+
+    .mantine-Accordion-item {
+      border-color: $color-neutral--3;
+    }
+
+    .mantine-Accordion-control {
+      padding: 0 0 0.8rem;
+      border-bottom: 0.1rem solid $color-neutral--3;
+
+      @media (min-width: $screen-md) {
+        @include heading-5;
+      }
+
+      &:hover {
+        background-color: $color-neutral--1;
+      }
+    }
+
+    .mantine-Accordion-content {
+      padding: 1.6rem 0;
+    }
+
+    .mantine-Accordion-label {
+      color: $color-neutral--9;
+      padding: 0;
+      @include heading-4;
+
+      @media (min-width: $screen-md) {
+        @include heading-5;
+      }
+    }
+
+    .mantine-Accordion-chevron {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+
+      & > svg {
+        width: 2rem !important;
+        height: 2rem !important;
+        color: $color-neutral--9;
+      }
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+    .mantine-Button-root[data-variant='secondary'] {
+      min-height: 4rem;
+    }
+  }
+
+  &-select {
+    min-height: 3.4rem;
+    &-label {
+      font-size: $font-size-12;
+      font-weight: 700;
+      color: $color-neutral--8;
+    }
+    &-desc {
+      font-size: $font-size-12;
+      color: $color-neutral--8;
+    }
+  }
+}

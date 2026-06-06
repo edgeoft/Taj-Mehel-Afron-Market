@@ -1,0 +1,165 @@
+.mantine-MultiSelect-root {
+  .mantine-MultiSelect-inputField {
+    // max-width: 100%;
+    min-height: 4rem !important;
+    padding: 1.4rem 1.2rem;
+    &::placeholder {
+      font-size: $font-size-14 !important;
+      font-weight: 400 !important;
+      color: $color-neutral--6;
+    }
+    &:focus {
+      border-color: $color-orange !important;
+    }
+    &[data-error='true'] {
+      border-color: $color-error !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+    }
+
+    &[data-valid='true'] {
+      border-color: $color-success-dark !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+    }
+
+    &[data-disabled='true'] {
+      border-color: $color-neutral--4;
+      background: $color-neutral--2;
+      color: $color-neutral--5;
+      &::placeholder {
+        color: $color-neutral--6;
+      }
+      &:focus {
+        border-color: $color-neutral--4 !important;
+      }
+    }
+  }
+  .mantine-MultiSelect-input {
+    border: 1px solid $color-neutral--4 !important;
+    // padding: 1.4rem 1.2rem;
+    padding: 0;
+    border-radius: 0 !important;
+    font-size: $font-size-14 !important;
+    font-weight: 400 !important;
+    color: $color-neutral--7 !important;
+    background-color: $color-neutral--2 !important;
+    height: 4rem !important;
+
+    &:focus {
+      border-color: $color-orange !important;
+    }
+
+    &::placeholder {
+      font-size: $font-size-14 !important;
+      font-weight: 400 !important;
+      color: $color-neutral--6;
+    }
+
+    &[data-error='true'] {
+      border-color: $color-error !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+
+      &::placeholder {
+        font-size: $font-size-14 !important;
+        font-weight: 400 !important;
+        color: $color-neutral--6;
+      }
+    }
+
+    &[data-valid='true'] {
+      border-color: $color-success-dark !important;
+      &:focus {
+        border-color: $color-orange !important;
+      }
+    }
+
+    &[data-disabled='true'] {
+      border-color: $color-neutral--4;
+      background: $color-neutral--2;
+      color: $color-neutral--5;
+      &::placeholder {
+        color: $color-neutral--6;
+      }
+      &:focus {
+        border-color: $color-neutral--4 !important;
+      }
+    }
+  }
+  .mantine-MultiSelect-pillsList {
+    height: 100%;
+  }
+  .mantine-MultiSelect-pill[data-variant='default'] {
+    margin-left: 1.6rem;
+    background-color: #fff;
+    border: 1px solid #e07a15;
+    color: #e07a15;
+    border-radius: 0;
+    @include tag-text;
+    padding-left: 0.6rem;
+  }
+
+  .mantine-MultiSelect-label {
+    @include body-2;
+    color: $color-neutral--7;
+    &[data-disabled='true'] {
+      color: $color-neutral--5 !important;
+
+      .mantine-MultiSelect-required {
+        color: $color-neutral--5 !important;
+      }
+    }
+  }
+
+  .mantine-MultiSelect-error {
+    font-size: $font-size-10;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-top: 0.4rem;
+    color: $color-error;
+  }
+}
+
+.borderless-select {
+  display: flex;
+  align-items: center;
+  .mantine-MultiSelect-input {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 1rem;
+    height: 2.2rem !important;
+  }
+
+  .mantine-MultiSelect-label {
+    @include body-2;
+    color: $color-neutral--7;
+    font-weight: 700 !important;
+  }
+}
+
+.mantine-Popover-dropdown {
+  svg {
+    display: none;
+  }
+  .mantine-MultiSelect-option {
+    &[data-checked='true'] {
+      background: $color-yellow-foreground;
+      color: $primary-color;
+      &:focus,
+      &:hover {
+        background: $color-yellow-foreground !important;
+        color: $primary-color !important;
+      }
+    }
+  }
+}

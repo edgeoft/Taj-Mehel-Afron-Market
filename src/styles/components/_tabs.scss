@@ -1,0 +1,32 @@
+@import '../mixins';
+@import '../abstracts/colors';
+@import '../abstracts/variables';
+
+.mantine-Tabs-root {
+  .mantine-Tabs-list {
+    gap: 2.4rem !important;
+    flex-wrap: nowrap !important;
+
+    .mantine-Tabs-tab {
+      padding: 0.6rem 0.2rem !important;
+      color: $color-neutral--6;
+      @include body-2;
+
+      @media (max-width: $screen-md) {
+        @include body-2-small;
+        padding: 0.4rem 0.2rem !important;
+      }
+
+      :hover {
+        color: $color-orange;
+      }
+
+      &[aria-selected='true'] {
+        color: $color-orange;
+        font-weight: bold !important;
+        border-bottom-width: 3px !important;
+        border-color: $color-orange !important;
+      }
+    }
+  }
+}

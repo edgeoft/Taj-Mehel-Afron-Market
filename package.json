@@ -1,0 +1,47 @@
+{
+  "name": "furniture-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "pre-commit": "prettier --write . && git add . && next lint",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@mantine/carousel": "^7.12.2",
+    "@mantine/core": "^7.12.1",
+    "@mantine/form": "^7.13.0",
+    "@mantine/hooks": "^7.12.1",
+    "@phosphor-icons/react": "^2.1.7",
+    "dayjs": "^1.11.13",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
+    "mantine-form-yup-resolver": "^2.0.0",
+    "next": "14.2.5",
+    "nextjs-toploader": "^3.6.15",
+    "react": "^18",
+    "react-dom": "^18",
+    "validator": "^13.12.0",
+    "yet-another-react-lightbox": "^3.21.6",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/validator": "^13.12.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "husky": "^9.1.4",
+    "postcss": "^8.4.41",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/colors';
+@import '../../mixins';
+
+.product-filter-container {
+  .mantine-Accordion-root {
+    .mantine-Accordion-item {
+      .mantine-Accordion-content {
+        padding-left: 0 !important;
+      }
+    }
+  }
+}

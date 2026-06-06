@@ -1,0 +1,40 @@
+@import '../../abstracts/colors';
+@import '../../abstracts/variables';
+@import '../../mixins';
+
+.custom-table {
+  .mantine-Table-thead {
+    .mantine-Table-tr {
+      background-color: $color-neutral--3;
+      .mantine-Table-th {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $color-neutral--9;
+
+        @media (max-width: $screen-md) {
+          padding: 0.8rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .mantine-Table-tbody {
+    .mantine-Table-tr {
+      .mantine-Table-td {
+        padding: 1.6rem;
+        font-size: 1.4rem;
+        color: $color-neutral--8;
+
+        @media (max-width: $screen-md) {
+          padding: 0.8rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: $color-neutral--2;
+      }
+    }
+  }
+}

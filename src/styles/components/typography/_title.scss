@@ -1,0 +1,86 @@
+@import '../../abstracts/variables';
+
+.heading-1 {
+  @include heading-1;
+  @media (max-width: $screen-md) {
+    @include heading-1-small;
+  }
+}
+
+.heading-2 {
+  @include heading-2;
+  @media (max-width: $screen-md) {
+    @include heading-2-small;
+  }
+}
+
+.heading-3 {
+  @include heading-3;
+  @media (max-width: $screen-md) {
+    @include heading-4;
+  }
+}
+
+.heading-4 {
+  @include heading-4;
+  @media (max-width: $screen-md) {
+    @include heading-5;
+  }
+}
+
+.heading-5 {
+  @include heading-5;
+  @media (max-width: $screen-md) {
+    @include heading-6-small;
+  }
+}
+
+.heading-6 {
+  @include heading-6;
+  @media (max-width: $screen-md) {
+    @include heading-6-small;
+  }
+}
+
+.body-2 {
+  @include body-2;
+  @media (max-width: $screen-md) {
+    @include body-2-small;
+  }
+}
+
+h1.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-1-small;
+  }
+}
+
+h2.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-2-small;
+  }
+}
+
+h3.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-4;
+  }
+}
+
+h4.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-5;
+  }
+}
+
+h5.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-6-small;
+  }
+}
+
+h6.mantine-Title-root {
+  @media (max-width: $screen-md) {
+    @include heading-6-small;
+  }
+}

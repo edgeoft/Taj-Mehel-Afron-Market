@@ -1,0 +1,45 @@
+.mantine-Checkbox-root {
+  .mantine-Checkbox-body {
+    .mantine-Checkbox-inner {
+      .mantine-Checkbox-input {
+        border-width: 1.5px;
+        border-radius: 0%;
+        border-color: $color-neutral--4;
+        accent-color: $color-success-dark;
+        cursor: pointer;
+
+        &:hover {
+          border-color: $color-success-dark;
+        }
+        &:checked {
+          border-color: $color-success-dark;
+          background-color: $color-success-dark;
+        }
+      }
+    }
+    .mantine-Checkbox-label {
+      @include body-2;
+      color: $color-neutral--7;
+    }
+  }
+}
+
+.filter-checkbox {
+  .mantine-Checkbox-body {
+    .mantine-Checkbox-inner {
+      .mantine-Checkbox-input {
+        border-color: $color-neutral--7;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.2rem;
+      }
+    }
+    .mantine-Checkbox-label {
+      display: -webkit-box;
+      -webkit-line-clamp: 1; /* Number of lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

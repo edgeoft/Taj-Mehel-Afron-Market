@@ -1,0 +1,65 @@
+@import '../../abstracts/colors';
+@import '../../abstracts/variables';
+
+.card-slider__carousel {
+  .mantine-Carousel-indicators {
+    position: relative;
+    justify-content: flex-start;
+    padding: 0 5.6rem;
+    bottom: 5.6rem;
+
+    .mantine-Carousel-indicator {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $color-neutral--1;
+      &[data-active] {
+        width: 2.6rem;
+        background-color: $color-orange;
+      }
+    }
+  }
+  .mantine-Carousel-controls {
+    transition: opacity 150ms ease;
+    .mantine-Carousel-control {
+      background: $color-neutral--1;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 2.7rem;
+      color: $color-neutral--9;
+      -webkit-tap-highlight-color: $color-neutral--1;
+      border: 1px solid $color-neutral--5;
+      box-shadow: -10px 6px 20px 0px rgba(0, 0, 0, 0.05);
+      opacity: 1;
+
+      &:first-child {
+        position: absolute;
+        left: -1.5rem;
+        top: 50%;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        right: -1.5rem;
+        top: 50%;
+      }
+
+      &[data-inactive] {
+        opacity: 0;
+        cursor: default;
+      }
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    .mantine-Carousel-indicators {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    .mantine-Carousel-indicators {
+      padding: 0 3.2rem;
+      bottom: 4rem;
+    }
+  }
+}

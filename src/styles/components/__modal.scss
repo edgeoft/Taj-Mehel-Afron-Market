@@ -1,0 +1,46 @@
+@import '../abstracts/variables';
+
+.mantine-Modal-root {
+  .mantine-Modal-inner {
+    .mantine-Modal-content {
+      border-radius: 0;
+      padding: 3.2rem;
+      .mantine-Modal-header {
+        padding: 0;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid $color-neutral--3;
+        min-height: fit-content;
+
+        h2 {
+          @include heading-3;
+        }
+      }
+
+      .mantine-Modal-body {
+        padding: 0;
+        padding-top: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .mantine-Modal-root {
+    .mantine-Modal-inner {
+      .mantine-Modal-content {
+        padding: 1.6rem;
+      }
+    }
+  }
+}
+
+// confirmation modal
+.confirmation-modal {
+  .mantine-Modal-inner {
+    .mantine-Modal-content {
+      .mantine-Modal-body {
+        padding-top: 0 !important;
+      }
+    }
+  }
+}

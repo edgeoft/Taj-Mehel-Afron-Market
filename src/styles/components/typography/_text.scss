@@ -1,0 +1,19 @@
+@import '../../mixins';
+
+.body-1 {
+  @include body-1;
+  @media (max-width: $screen-md) {
+    @include body-2;
+  }
+}
+
+.body-2 {
+  @include body-2;
+  @media (max-width: $screen-md) {
+    @include body-2-small;
+  }
+}
+
+.tag-text {
+  @include tag-text;
+}

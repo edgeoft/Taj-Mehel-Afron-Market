@@ -1,0 +1,27 @@
+@import '../../abstracts/variables';
+
+.card-container {
+  .image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3; // Adjust the aspect ratio to your needs (e.g., 16:9, 4:3, etc.)
+    overflow: hidden; // This will ensure the image doesn't overflow outside the container
+
+    img {
+      transition: all 0.5s ease-in-out;
+      transform-origin: center center; // For hover effects
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    .product-title {
+      font-weight: normal;
+    }
+  }
+}

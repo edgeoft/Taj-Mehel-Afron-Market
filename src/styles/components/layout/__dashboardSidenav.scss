@@ -1,0 +1,14 @@
+@import '../../abstracts/colors';
+
+.sidenavItem-container {
+  &-text {
+    font-size: 1.6rem;
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+
+  &:hover {
+    background-color: $color-yellow-foreground !important;
+  }
+}

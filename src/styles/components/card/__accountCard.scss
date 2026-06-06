@@ -1,0 +1,25 @@
+@import '../../abstracts/variables';
+
+.accountCard-container {
+  width: auto;
+
+  &-card {
+    padding: 1.6rem;
+  }
+
+  .caret-right {
+    display: none;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+
+    &-card {
+      padding: 0rem;
+    }
+
+    .caret-right {
+      display: block;
+    }
+  }
+}
