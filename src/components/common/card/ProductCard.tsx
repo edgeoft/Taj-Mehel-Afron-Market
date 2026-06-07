@@ -87,12 +87,14 @@ const ProductCard = ({ product, isFavourite = false }: Props) => {
                 td={'line-through'}
                 c={'neutral.6'}
               >
-                {formatPriceInRs(Number(product?.discountedPrice))}
+                {formatPriceInRs(Number(product?.price))}
               </Title>
             ) : null}
 
             <Title order={4} c={'neutral.10'}>
-              {formatPriceInRs(Number(product?.price))}
+              {formatPriceInRs(
+                Number(product?.discountedPrice ?? product?.price)
+              )}
             </Title>
           </Flex>
 

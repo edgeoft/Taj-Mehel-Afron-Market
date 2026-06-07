@@ -1,40 +1,34 @@
 import { Box } from '@mantine/core';
 import FeatureList from '@/components/page/home/FeatureList';
 import OfferList from '@/components/page/home/OfferList';
-import PopularFunitureItems from '@/components/page/home/PopularFunitureItems';
-import PopularElectronicsItems from '@/components/page/home/PopularElectronicsItems';
+import PopularStaplesItems from '@/components/page/home/PopularFunitureItems';
+// import PopularSnacksItems from '@/components/page/home/PopularElectronicsItems';
 import NewArrivalsList from '@/components/page/home/NewArrival';
 import Newsletter from '@/components/common/Newsletter';
-import RequirementBanner from '@/components/common/requirement-banner';
+// import RequirementBanner from '@/components/common/requirement-banner';
 import BannerSliders from '@/components/page/home/BannerSliders';
 
 export default function Home() {
   return (
     <>
-      {/* Banner Slider List */}
       <BannerSliders />
 
-      {/* Feature List */}
       <Box visibleFrom="md">
         <FeatureList />
       </Box>
 
-      {/* New Arrival Items */}
       <NewArrivalsList />
 
-      {/* Offer List */}
       <OfferList />
 
-      {/* Popular Funiture Items */}
-      <PopularFunitureItems />
+      <PopularStaplesItems />
 
-      {/* Requirement Banner */}
-      <RequirementBanner />
+      {/* Request a product — hidden for now, re-enable when needed */}
+      {/* <RequirementBanner /> */}
 
-      {/* Popular Electronics Items */}
-      <PopularElectronicsItems />
+      {/* Snacks & Beverages — hidden for now, re-enable when needed */}
+      {/* <PopularSnacksItems /> */}
 
-      {/* Newsletter */}
       <Newsletter />
     </>
   );

@@ -3,9 +3,7 @@ import { Box, Flex, SimpleGrid, Stack, Text, Title } from '@mantine/core';
 import Image from 'next/image';
 import AboutUsTitleDescContent from './AboutUsTitleDescContent';
 
-type Props = {};
-
-const AboutUsContent = ({}: Props) => {
+const AboutUsContent = () => {
   return (
     <SimpleGrid
       cols={{ base: 1, lg: 2 }}
@@ -22,12 +20,12 @@ const AboutUsContent = ({}: Props) => {
         >
           <AboutUsTitleDescContent
             title="ABOUT US"
-            description="Discover the Perfect Blend of Style, Innovation, and Comfort at FurniTech"
+            description="Authentic Indian Groceries in the Heart of Helsinki"
           />
           <Box className="aboutUs-imageContainer">
             <Image
               src={images.aboutUsImg}
-              alt={'requirement-banner'}
+              alt="Namaste Indian Market store"
               width={0}
               height={0}
               sizes="100vw"
@@ -35,25 +33,24 @@ const AboutUsContent = ({}: Props) => {
             />
           </Box>
           <Text className="body-1" c={'neutral.7'}>
-            Welcome to FurniTech, your one-stop destination for high-quality
-            furniture, electronics, and clothing in Nepal. At FurniTech, we are
-            committed to providing you with a seamless shopping experience,
-            combining the best of style, technology, and comfort under one roof.
+            Welcome to Namaste Indian Market, your trusted Indian grocery store
+            at Hakaniemi torikatu 2 in Helsinki. We bring the flavours of home
+            to Finland with a curated selection of spices, rice, lentils,
+            snacks, pickles and everyday essentials from India.
           </Text>
           <Text className="body-1" c={'neutral.7'}>
-            At FurniTech, our mission is to enhance your living spaces and
-            lifestyle with products that blend functionality, design, and
-            innovation. We believe that your home should reflect your
-            personality and meet your everyday needs, whether it’s the perfect
-            sofa for your living room, the latest electronics for your home, or
-            stylish clothing that suits your taste.
+            Our mission is to make authentic Indian groceries accessible and
+            convenient for families across Helsinki, Espoo, Vantaa and Uusimaa.
+            Whether you need basmati for biryani, fresh masalas for curry, or
+            your favourite Haldiram snacks, we are here to serve you with care
+            and quality.
           </Text>
         </Flex>
       </Box>
       <Box visibleFrom="lg">
         <Image
           src={images.aboutUsImg}
-          alt={'requirement-banner'}
+          alt="Namaste Indian Market store interior"
           width={0}
           height={0}
           sizes="100vw"
@@ -66,7 +63,7 @@ const AboutUsContent = ({}: Props) => {
       <Box visibleFrom="lg">
         <Image
           src={images.ourVisionImg}
-          alt={'requirement-banner'}
+          alt="Fresh Indian groceries at Namaste Indian Market"
           width={0}
           height={0}
           sizes="100vw"
@@ -86,12 +83,12 @@ const AboutUsContent = ({}: Props) => {
         >
           <AboutUsTitleDescContent
             title="OUR VISION"
-            description="Pioneering a New Era of Lifestyle Enhancement through Quality, Innovation, and Unmatched Convenience in E-Commerce"
+            description="Bringing the Taste of India Closer to Every Home in Finland"
           />
           <Box className="aboutUs-imageContainer">
             <Image
               src={images.ourVisionImg}
-              alt={'requirement-banner'}
+              alt="Indian spices and staples"
               width={0}
               height={0}
               sizes="100vw"
@@ -99,11 +96,10 @@ const AboutUsContent = ({}: Props) => {
             />
           </Box>
           <Text className="body-1" c={'neutral.7'}>
-            Our vision is to become Nepal’s leading e-commerce platform, known
-            for offering a diverse range of high-quality products and
-            exceptional customer service. We aim to bring the best global and
-            local brands to your doorstep, making shopping easier, more
-            convenient, and enjoyable.
+            Our vision is to become the leading Indian grocery destination in
+            Finland — known for authentic products, reliable delivery and warm,
+            personal service. We aim to connect the Indian diaspora and food
+            lovers with the ingredients that make every meal feel like home.
           </Text>
         </Flex>
       </Box>

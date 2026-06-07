@@ -17,7 +17,7 @@ const CategoryListing = ({ close }: Props) => {
     setActiveItem((prevData) => (prevData !== data ? data : null));
   };
 
-  const items = NAVBAR_MEGA_MENU.map(({ title, slug, subCategories }, idx) => (
+  const items = NAVBAR_MEGA_MENU.map(({ title, subCategories }, idx) => (
     <Accordion.Item key={idx} value={title}>
       <Accordion.Control
         className="body-2 cursor-pointer outline-0"
@@ -35,7 +35,7 @@ const CategoryListing = ({ close }: Props) => {
         {subCategories.map(({ title }, innerIdx) => (
           <Link
             key={innerIdx}
-            href={`/products?categoryIds=${slug}`}
+            href={`/products?categoryIds=${title}`}
             onClick={close}
           >
             <Text className="body-2 cursor-pointer">{title}</Text>

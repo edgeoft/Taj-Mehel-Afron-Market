@@ -45,9 +45,10 @@ const NavSidebar = () => {
             />
             <Image
               src={images.mainLogo}
-              alt="Furniture Logo"
-              width={104.65}
+              alt="Namaste Indian Market logo"
+              width={114}
               height={32}
+              priority
               className="navbar-logo"
             />
           </Flex>

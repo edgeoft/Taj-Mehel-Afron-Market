@@ -17,15 +17,16 @@ const Newsletter = ({ bg }: Props) => {
         >
           <Box>
             <Title order={4} c={'orange'}>
-              10% off on Subcription
+              10% off your first order
             </Title>
 
             <Title order={2} className="heading-1" c={'primary'} mt={4}>
-              Join our Newsletter Today
+              Join the Namaste Newsletter
             </Title>
 
             <Text className="body-1" c={'neutral.7'} mt={12}>
-              Get exciting news and updates of the offers available weekly
+              Get weekly offers on spices, rice, snacks and new arrivals across
+              Helsinki and Uusimaa.
             </Text>
           </Box>
 

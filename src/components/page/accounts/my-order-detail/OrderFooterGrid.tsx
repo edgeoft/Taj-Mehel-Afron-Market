@@ -3,8 +3,6 @@ import { ListOption } from '@/types/generic';
 import { formatPriceInRs } from '@/utils/price';
 import { Divider, Flex, SimpleGrid, Stack, Text, Title } from '@mantine/core';
 
-type Props = {};
-
 const LabelWithValue = ({ label, value }: ListOption) => {
   return (
     <Flex justify={'space-between'} align={'center'} gap={8}>
@@ -18,46 +16,22 @@ const LabelWithValue = ({ label, value }: ListOption) => {
   );
 };
 
-const OrderFooterGrid = ({}: Props) => {
+const OrderFooterGrid = () => {
   const deliveryDetails = [
-    {
-      id: 1,
-      label: 'Name',
-      value: 'Ram Sharma',
-    },
+    { id: 1, label: 'Name', value: 'Priya Sharma' },
     {
       id: 2,
       label: 'Address',
-      value: 'Kalanki , Kathmandu',
+      value: 'Mannerheimintie 12, 00100 Helsinki',
     },
-    {
-      id: 3,
-      label: 'Phone',
-      value: '9898989898',
-    },
-    {
-      id: 4,
-      label: 'Delivery Date ',
-      value: 'Thus, 23rd Aug 2024',
-    },
+    { id: 3, label: 'Phone', value: '040 815 1341' },
+    { id: 4, label: 'Delivery Date', value: 'Thu, 12 Jun 2026' },
   ];
 
   const orderSummary = [
-    {
-      id: 1,
-      label: 'Subtotal',
-      value: '55000',
-    },
-    {
-      id: 2,
-      label: 'Discount',
-      value: '3000',
-    },
-    {
-      id: 3,
-      label: 'Delivery',
-      value: '240',
-    },
+    { id: 1, label: 'Subtotal', value: '36.99' },
+    { id: 2, label: 'Discount', value: '4.00' },
+    { id: 3, label: 'Delivery', value: '4.99' },
   ];
 
   return (
@@ -91,7 +65,7 @@ const OrderFooterGrid = ({}: Props) => {
                 Total
               </Title>
               <Title order={4} c={'neutral.10'}>
-                {formatPriceInRs(20000)}
+                {formatPriceInRs(37.98)}
               </Title>
             </Flex>
 

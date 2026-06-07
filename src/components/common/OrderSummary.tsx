@@ -30,15 +30,15 @@ interface TOrderSummaryProps extends BoxComponentProps {
 export const ORDER_INFO = [
   {
     label: 'Subtotal',
-    value: 'Rs. 2,53,000',
+    value: '€42,45',
   },
   {
     label: 'Discount',
-    value: 'Rs. 3,000',
+    value: '€4,00',
   },
   {
     label: 'Delivery',
-    value: '120',
+    value: '€4,99',
   },
 ];
 
@@ -84,7 +84,7 @@ export default function OrderSummary(props: TOrderSummaryProps) {
         </Accordion>
         <Flex justify={'space-between'} align={'center'}>
           <Title order={4}>Total</Title>
-          <Title order={3}>Rs.2,00,000</Title>
+          <Title order={3}>€43,44</Title>
         </Flex>
         <Divider my={16} color={'neutral.3'} />
         {props.page === 'cart' && (

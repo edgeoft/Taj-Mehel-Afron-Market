@@ -57,10 +57,10 @@ export const LoginOTPSection = ({ setCurrentStep }: TLoginOTP) => {
           <Flex justify={'flex-start'} align={'center'} gap={8}>
             <Text className="body-2" c={'neutral.9'}>
               We have sent you sms with 5 digit verification code (OTP) on +977
-              9898989898 {'    '}
+              040 815 1341 {'    '}
               <b
                 onClick={() => setCurrentStep(1)}
-                style={{ color: '#6A3120' }}
+                style={{ color: '#FF9933' }}
                 className="cursor-pointer"
               >
                 CHANGE

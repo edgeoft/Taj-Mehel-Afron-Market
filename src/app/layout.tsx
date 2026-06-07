@@ -16,8 +16,29 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
 export const metadata: Metadata = {
-  title: 'Nepal Furnitech',
-  description: 'Nepal Furnitech',
+  title: {
+    default: 'Namaste Indian Market | Indian Grocery Store in Helsinki',
+    template: '%s | Namaste Indian Market',
+  },
+  description:
+    'Authentic Indian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa. Spices, rice, lentils, snacks and more at Namaste Indian Market.',
+  keywords: [
+    'Indian grocery',
+    'Helsinki',
+    'Indian food',
+    'spices',
+    'basmati rice',
+    'Namaste Indian Market',
+  ],
+  authors: [{ name: 'Namaste Indian Market' }],
+  openGraph: {
+    title: 'Namaste Indian Market | Indian Grocery Store in Helsinki',
+    description:
+      'Authentic Indian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa.',
+    locale: 'en_FI',
+    type: 'website',
+    siteName: 'Namaste Indian Market',
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +53,7 @@ export default function RootLayout({
       </head>
       <body className={`${figtree.variable}`}>
         <MantineProvider theme={theme}>
-          <NextTopLoader showSpinner={false} color="#6a3120" height={3} />
+          <NextTopLoader showSpinner={false} color="#FF9933" height={3} />
           <Navbar />
           {children}
           <Footer />

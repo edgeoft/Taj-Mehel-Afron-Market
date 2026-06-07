@@ -91,7 +91,7 @@ const AddressForm = ({ opened, close, address }: Props) => {
           <Stack gap={16}>
             <FormSectionHeading title="Address" order={4} />
 
-            <LabelWithValue label="Country / Region :" value="Nepal" />
+            <LabelWithValue label="Country / Region :" value="Finland" />
 
             <SimpleGrid
               spacing={16}

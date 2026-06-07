@@ -10,7 +10,7 @@ import { newArrivalsTabs } from '@/static/home';
 type Props = {};
 
 const NewArrivalsList = ({}: Props) => {
-  const [selectedOption, setSelectedOption] = useState('furniture');
+  const [selectedOption, setSelectedOption] = useState('staples');
 
   const handleOptionChange = (option: string) => {
     setSelectedOption(option);

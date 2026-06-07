@@ -1,7 +1,7 @@
 'use client';
 
 import Input from '@/components/common/form/Input';
-import { NAVBAR_DUMMY_OPT } from '@/static/navbar';
+import { SEARCH_SUGGESTIONS } from '@/static/navbar';
 import {
   Box,
   Popover,
@@ -73,7 +73,7 @@ const NavbarSearch = ({ className, maxWidth }: TNavbarSearch) => {
         </PopoverTarget>
 
         <PopoverDropdown py={12} px={8} mih={100}>
-          {NAVBAR_DUMMY_OPT.map((item, index) => (
+          {SEARCH_SUGGESTIONS.map((item, index) => (
             <Box key={index} className="navbar-search-popover">
               <Text className="body-2">{item.label}</Text>
             </Box>

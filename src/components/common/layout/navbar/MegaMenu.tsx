@@ -53,7 +53,7 @@ const MegaMenu = () => {
           <Flex
             justify={'flex-start'}
             align={'center'}
-            gap={32}
+            gap={20}
             w={'max-content'}
             h={'100%'}
           >
@@ -124,12 +124,14 @@ const MegaMenu = () => {
                             c={'neutral.9'}
                             mb={16}
                           >
-                            Innovate your space with cutting-edge electronics
+                            {item.description}
                           </Title>
                           <Button
+                            component={Link}
+                            href={`/categories/${item.slug}`}
                             rightSection={<CaretRight />}
                             variant="transparent"
-                            c={'#3E7742'}
+                            c={'#138808'}
                             className="navbar-bottom-button"
                           >
                             Shop Now

@@ -15,26 +15,26 @@ const ProductInfoSection = () => {
       miw={{ base: '100%', lg: 314, xl: 385 }}
     >
       <Text className="productInfo-tag" mb={8} c={'secondary.6'}>
-        SOFA
+        RICE & GRAINS
       </Text>
       <Title order={2} className="font-normal productInfo-title" mb={12}>
-        King Sized Sofa
+        Daawat
       </Title>
 
       <ReviewSection />
 
       <Flex justify={'space-between'} align={'center'} gap={16} mb={16}>
         <Title order={3} className="productInfo-priceInfo" c={'neutral.10'}>
-          Rs.80,000
+          €12,99
         </Title>
-        <Tag text={`20% off`} />
+        <Tag text={`13% off`} />
       </Flex>
       <Text className="body-2" c={'neutral.6'} mb={12}>
-        Experience ultimate relaxation with our elegant sofa, designed for both
-        style and comfort.
+        Premium aged basmati rice with long grains and rich aroma — perfect for
+        biryani, pulao and everyday meals.
       </Text>
-      <ProductChoose title={'Size'} data={availableSizes} />
-      <ProductChoose title={'Color'} data={availableColors} />
+      <ProductChoose title={'Pack Size'} data={availableSizes} />
+      <ProductChoose title={'Weight'} data={availableColors} />
 
       <Flex
         justify={{ base: 'flex-start', md: 'space-between' }}
@@ -53,9 +53,9 @@ const ProductInfoSection = () => {
             gap={8}
             className="productInfo-sellerButton"
           >
-            <Phone size={20} color={'#454545'} />
+            <Phone size={20} color={'#454545'} aria-hidden />
             <Text className="body-2" c={'#454545'}>
-              Krishna Furniture
+              Namaste Indian Market
             </Text>
           </Flex>
           <Flex
@@ -64,9 +64,9 @@ const ProductInfoSection = () => {
             gap={8}
             className="productInfo-sellerButton"
           >
-            <Phone size={20} color={'#454545'} />
+            <Phone size={20} color={'#454545'} aria-hidden />
             <Text className="body-2" c={'#454545'}>
-              9898989898
+              040 815 1341
             </Text>
           </Flex>
         </Flex>

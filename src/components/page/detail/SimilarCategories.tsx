@@ -12,7 +12,7 @@ const SimilarCategories = ({}: Props) => {
         <SectionHeader
           title={'Similar Categories'}
           type="description"
-          description={'Best furnitures for your home'}
+          description={'Related staples and pantry essentials'}
           link="/products"
         />
 

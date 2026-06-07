@@ -5,5 +5,6 @@ export type TSubCatItem = {
 export type TNavbarMegaMenuItem = {
   title: string;
   slug: string;
+  description: string;
   subCategories: TSubCatItem[];
 };

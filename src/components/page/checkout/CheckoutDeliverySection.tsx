@@ -112,7 +112,7 @@ const CheckoutDeliverySection = ({}: Props) => {
                     Country / Region :
                   </Text>
                   <Title order={6} className="heading-4 checkout-country">
-                    Nepal
+                    Finland
                   </Title>
                 </Flex>
 

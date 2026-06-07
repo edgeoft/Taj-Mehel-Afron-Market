@@ -29,7 +29,7 @@ const ProductHeader = ({}: Props) => {
         </Box>{' '}
         results for{' '}
         <Box component="span" fw={'bold'}>
-          &apos;Sofa&apos;
+          &apos;Groceries&apos;
         </Box>
       </Text>
 

@@ -3,80 +3,50 @@ import { TBreadCrumb } from '@/types/generic';
 
 export const aboutUsBreadCrumb: TBreadCrumb = [
   { id: '1', title: 'Home', href: '/' },
-  {
-    id: '2',
-    title: 'About Us',
-  },
+  { id: '2', title: 'About Us' },
 ];
 
 export const logos = [
-  {
-    id: 1,
-    img: images.logo1Img,
-  },
-  {
-    id: 2,
-    img: images.logo2Img,
-  },
-  {
-    id: 3,
-    img: images.logo3Img,
-  },
-  {
-    id: 4,
-    img: images.logo4Img,
-  },
-  {
-    id: 5,
-    img: images.logo5Img,
-  },
-  {
-    id: 6,
-    img: images.logo6Img,
-  },
-  {
-    id: 7,
-    img: images.logo7Img,
-  },
-  {
-    id: 8,
-    img: images.logo8Img,
-  },
-  {
-    id: 9,
-    img: images.logo9Img,
-  },
+  { id: 1, img: images.logo1Img },
+  { id: 2, img: images.logo2Img },
+  { id: 3, img: images.logo3Img },
+  { id: 4, img: images.logo4Img },
+  { id: 5, img: images.logo5Img },
+  { id: 6, img: images.logo6Img },
+  { id: 7, img: images.logo7Img },
+  { id: 8, img: images.logo8Img },
+  { id: 9, img: images.logo9Img },
 ];
 
 export const customerReviews = [
   {
     id: 1,
-    name: 'Jeremy Either',
+    name: 'Priya Sharma',
     img: images.productImgOne,
-    review: `I recently purchased a dining set from Transform Your Space, and the experience was outstanding. The quality of the furniture exceeded my expectations, and the customer service was top-notch. I highly recommend them to anyone looking to elevate their home decor!`,
+    review: `Namaste Indian Market has been a lifesaver for our family in Helsinki. Fresh spices, quality rice and friendly service every time we order. Truly authentic Indian groceries!`,
   },
   {
     id: 2,
-    name: 'Sarah Logan',
+    name: 'Rajesh Kumar',
     img: images.productImgFour,
-    review: `Shopping for furniture online has never been this easy and enjoyable. Transform Your Space offers a fantastic range of products with detailed descriptions and beautiful photos. The delivery was prompt, and the items were exactly as described. I couldn't be happier!`,
+    review: `Shopping for Indian groceries online has never been this easy. Great product range, fair prices and reliable delivery to Espoo. I recommend them to everyone in the Indian community.`,
   },
   {
     id: 3,
-    name: 'David Goggins',
+    name: 'Anita Patel',
     img: images.productImgFive,
-    review: `Transform Your Space truly lives up to its name. I found unique pieces that perfectly fit my style and transformed my living room. The whole process, from browsing to delivery, was smooth and hassle-free. Thank you for helping me create my dream home`,
+    review: `The store at Hakaniemi is wonderful and their delivery across Uusimaa is excellent. From dal to masala, everything tastes just like home. Thank you Namaste Indian Market!`,
   },
   {
     id: 4,
-    name: 'Jeremy Either',
+    name: 'Vikram Singh',
     img: images.productImgEight,
-    review: `I recently purchased a dining set from Transform Your Space, and the experience was outstanding. The quality of the furniture exceeded my expectations, and the customer service was top-notch. I highly recommend them to anyone looking to elevate their home decor!`,
+    review: `I ordered a full monthly grocery basket and everything arrived well packed and on time. The quality of basmati and spices is top notch. Will order again.`,
   },
   {
     id: 5,
-    name: 'Sarah Logan',
+    name: 'Meera Nair',
     img: images.productImgThree,
-    review: `Shopping for furniture online has never been this easy and enjoyable. Transform Your Space offers a fantastic range of products with detailed descriptions and beautiful photos. The delivery was prompt, and the items were exactly as described. I couldn't be happier!`,
+    review: `Clean website, easy checkout and genuine products. Namaste Indian Market is my trusted source for Indian food in Finland. The team is always helpful on the phone too.`,
   },
 ];

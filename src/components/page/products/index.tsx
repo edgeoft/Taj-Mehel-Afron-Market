@@ -1,7 +1,7 @@
 import { Flex, SimpleGrid } from '@mantine/core';
 import ProductFilter from './ProductFilter';
 import ProductHeader from './ProductHeader';
-import { popularFunitures } from '@/static/product';
+import { products } from '@/static/product';
 import ProductCard from '@/components/common/card/ProductCard';
 import MobileProductFilter from './MobileProductFilter';
 
@@ -17,7 +17,7 @@ const ProductListingSection = ({}: Props) => {
           <ProductHeader />
 
           <SimpleGrid cols={{ base: 2, lg: 3 }}>
-            {popularFunitures?.map((product) => (
+            {products?.map((product) => (
               <ProductCard key={product?.id} product={product} />
             ))}
           </SimpleGrid>

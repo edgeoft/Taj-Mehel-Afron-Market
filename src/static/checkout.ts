@@ -4,15 +4,8 @@ import { cartData } from './cart';
 
 export const checkoutBreadCrumb: TBreadCrumb = [
   { id: '1', title: 'Home', href: '/' },
-  {
-    id: '2',
-    title: 'My Cart',
-    href: '/my-cart',
-  },
-  {
-    id: '3',
-    title: 'Checkout',
-  },
+  { id: '2', title: 'My Cart', href: '/my-cart' },
+  { id: '3', title: 'Checkout' },
 ];
 
 export const cartProductInfo = () => {
@@ -26,57 +19,49 @@ export const cartProductInfo = () => {
 export const delivery = [
   {
     id: 1,
-    name: 'John Doe',
-    email: 'joh.doe@gmail.com',
-    streetAddress: 'Kalimati',
-    city: 'Kathmandu',
-    phoneCode: '+1',
-    phoneNumber: '9841234567',
-    state: 'Bagmati',
-    zipCode: '44600',
+    name: 'Priya Sharma',
+    email: 'priya.sharma@gmail.com',
+    streetAddress: 'Mannerheimintie 12',
+    city: 'Helsinki',
+    phoneCode: '+358',
+    phoneNumber: '401234567',
+    state: 'Uusimaa',
+    zipCode: '00100',
     isDefault: true,
-    companyName: 'John Pvt Ltd',
+    companyName: '',
   },
   {
     id: 2,
-    name: 'John Doe',
-    email: 'joh.doe1@gmail.com',
-    streetAddress: 'Kalimati',
-    city: 'Kathmandu',
-    phoneCode: '+977',
-    phoneNumber: '9841234567',
-    state: 'Bagmati',
-    zipCode: '44600',
+    name: 'Rajesh Kumar',
+    email: 'rajesh.kumar@gmail.com',
+    streetAddress: 'Otaniementie 5',
+    city: 'Espoo',
+    phoneCode: '+358',
+    phoneNumber: '501234567',
+    state: 'Uusimaa',
+    zipCode: '02150',
   },
   {
     id: 3,
-    name: 'Smriti Thapa',
-    email: 'smriti.thapa@gmail.com',
-    streetAddress: 'Syuichatar',
-    city: 'Kathmandu',
-    phoneCode: '+977',
-    phoneNumber: '9841234567',
-    state: 'Bagmati',
-    zipCode: '44600',
+    name: 'Anita Patel',
+    email: 'anita.patel@gmail.com',
+    streetAddress: 'Tikkurilantie 8',
+    city: 'Vantaa',
+    phoneCode: '+358',
+    phoneNumber: '441234567',
+    state: 'Uusimaa',
+    zipCode: '01300',
   },
 ];
 
 export const stateOpt = [
-  {
-    label: 'Bagmati',
-    value: 'Bagmati',
-  },
+  { label: 'Uusimaa', value: 'Uusimaa' },
+  { label: 'Helsinki', value: 'Helsinki' },
+  { label: 'Espoo', value: 'Espoo' },
+  { label: 'Vantaa', value: 'Vantaa' },
 ];
 
 export const discountCodeOpt = [
-  {
-    label: 'AYODASHAIN',
-    desc: '10% OFF',
-    value: 'dashainOffer',
-  },
-  {
-    label: 'AYOTIHAR',
-    desc: '20% OFF',
-    value: 'tiharOffer',
-  },
+  { label: 'NAMASTE10', desc: '10% OFF', value: 'welcome10' },
+  { label: 'DIWALI20', desc: '20% OFF', value: 'diwaliOffer' },
 ];

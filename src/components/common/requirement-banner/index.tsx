@@ -12,7 +12,7 @@ const RequirementBanner = () => {
       <Box pos={'relative'} className="requirementBanner-container">
         <Image
           src={images.requirementBanner}
-          alt={'requirement-banner'}
+          alt="Special grocery request banner"
           width={0}
           height={0}
           sizes="100vw"
@@ -21,7 +21,7 @@ const RequirementBanner = () => {
 
         <Image
           src={images.requirementBannerMobile}
-          alt={'requirement-banner'}
+          alt="Special grocery request banner"
           width={0}
           height={0}
           sizes="100vw"
@@ -38,7 +38,7 @@ const RequirementBanner = () => {
         >
           <Box>
             <Title order={6} c={'orange'}>
-              Get your desired Furniture
+              Can&apos;t find what you need?
             </Title>
 
             <Title
@@ -47,7 +47,7 @@ const RequirementBanner = () => {
               c={'primary'}
               className="requirementBanner-container-heading-2"
             >
-              Turn expectations into reality
+              Request a product
             </Title>
 
             <Text
@@ -56,17 +56,18 @@ const RequirementBanner = () => {
               c={'neutral.7'}
               w={{ base: '100%', sm: 433 }}
             >
-              Send us your idea about how you want the furniture and we will try
-              our best to provide you the desired one
+              Tell us which Indian grocery item you are looking for and we will
+              do our best to source it for you across Helsinki and Uusimaa.
             </Text>
           </Box>
 
           <Button
             variant="outline"
-            rightSection={<CaretRight />}
+            rightSection={<CaretRight aria-hidden />}
             className="w-fit"
+            aria-label="Send your product request"
           >
-            Send your Requirement
+            Send your request
           </Button>
         </Flex>
       </Box>

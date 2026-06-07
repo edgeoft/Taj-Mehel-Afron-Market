@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Container h={{ base: 112, lg: 72 }}>
         <Title order={1} className="hidden">
-          Nepal Furniture
+          Namaste Indian Market
         </Title>
         <Flex
           justify={'space-between'}
@@ -30,9 +30,10 @@ const Navbar = () => {
             <Link href={'/'}>
               <Image
                 src={images.mainLogo}
-                alt="Furniture Logo"
-                width={130.81}
-                height={40}
+                alt="Namaste Indian Market logo"
+                width={170}
+                height={48}
+                priority
                 className="navbar-logo"
               />
             </Link>

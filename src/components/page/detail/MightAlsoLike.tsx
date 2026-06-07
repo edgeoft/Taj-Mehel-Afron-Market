@@ -12,7 +12,7 @@ const MightAlsoLike = ({}: Props) => {
         <SectionHeader
           title={'You might also like'}
           type="description"
-          description={'Best furnitures for your home'}
+          description={'Related staples and pantry essentials'}
           link="/products"
         />
 

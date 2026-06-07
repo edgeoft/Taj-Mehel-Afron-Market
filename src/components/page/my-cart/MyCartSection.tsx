@@ -63,7 +63,7 @@ const MyCartSection = ({}: Props) => {
               4 Items
             </Title>
             <Title order={4} c={'neutral.10'}>
-              Rs. 1,25,000
+              €42,45
             </Title>
           </Flex>
         </Box>

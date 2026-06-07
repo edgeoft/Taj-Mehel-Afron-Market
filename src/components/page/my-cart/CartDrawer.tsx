@@ -75,7 +75,7 @@ const CartDrawer = ({ opened, close }: TCartDrawerProps) => {
                     Delivery Charge:
                   </Title>
                   <Text className="body-2" c={'neutral.9'}>
-                    Rs. 120
+                    €4,99
                   </Text>
                 </Flex>
               </Flex>
@@ -112,7 +112,7 @@ const CartDrawer = ({ opened, close }: TCartDrawerProps) => {
 
           <Flex justify={'space-between'} align={'center'}>
             <Title order={4}>Total</Title>
-            <Title order={3}>Rs.2,00,000</Title>
+            <Title order={3}>€43,44</Title>
           </Flex>
           <Divider my={16} color={'neutral.3'} />
           <Flex justify={'space-between'} align={'center'} gap={16}>

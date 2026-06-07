@@ -1,18 +1,16 @@
 import { Container, Flex, SimpleGrid } from '@mantine/core';
 import SectionHeader from '@/components/common/section-header';
-import { popularFunitures } from '@/static/product';
+import { popularStaples } from '@/static/product';
 import ProductCard from '@/components/common/card/ProductCard';
 
-type Props = {};
-
-const PopularFunitureItems = ({}: Props) => {
+const PopularStaplesItems = () => {
   return (
     <Container className="padding-t-72">
       <Flex gap={24} direction={'column'}>
         <SectionHeader
-          title={'Popular Furniture Items'}
+          title={'Popular Staples'}
           type="description"
-          description={'Best furnitures for your home'}
+          description={'Essential rice, dal and spices for your kitchen'}
           link="/products"
         />
 
@@ -21,7 +19,7 @@ const PopularFunitureItems = ({}: Props) => {
           spacing={16}
           verticalSpacing={24}
         >
-          {popularFunitures.map((product) => (
+          {popularStaples.map((product) => (
             <ProductCard key={product?.id} product={product} />
           ))}
         </SimpleGrid>
@@ -30,4 +28,4 @@ const PopularFunitureItems = ({}: Props) => {
   );
 };
 
-export default PopularFunitureItems;
+export default PopularStaplesItems;

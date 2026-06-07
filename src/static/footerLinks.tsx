@@ -12,59 +12,39 @@ import {
 
 export const FOOTER_CATEGORY_LINKS: TFooterCategoryLinks[] = [
   {
-    category: 'Electronics',
+    category: 'Indian Staples',
     subCategories: [
-      { title: 'Home Appliances' },
-      { title: 'Entertainment' },
-      { title: 'Computers & Laptops' },
-      { title: 'Mobiles & Tablets' },
-      { title: 'Audios & Headphones' },
-      { title: 'Cameras & Photography' },
-      { title: 'Gaming & Consoles' },
-      { title: 'Smart Home Devices' },
-      { title: 'Wearable Technology' },
-      { title: 'Personal Care & Grooming' },
-      { title: 'Office Electronics' },
+      { title: 'Rice & Grains' },
+      { title: 'Lentils & Pulses' },
+      { title: 'Spices & Masalas' },
+      { title: 'Flours & Atta' },
     ],
   },
   {
-    category: 'Furnitures',
+    category: 'Nepalese Products',
     subCategories: [
-      { title: 'Living Room' },
-      { title: 'Bedroom' },
-      { title: 'Dinning Room' },
-      { title: 'Office ' },
-      { title: 'Kids & Nursery  ' },
-      { title: 'Entryway' },
-      { title: 'Storage' },
-      { title: 'Accents' },
-      { title: 'Home Decors' },
+      { title: 'Gundruk & Sinki' },
+      { title: 'Dal Bhat Essentials' },
+      { title: 'Sel Roti Mix & Flours' },
+      { title: 'Achar & Pickles' },
     ],
   },
   {
-    category: 'Mens Clothing',
+    category: 'Asian Products',
     subCategories: [
-      { title: 'Shirts' },
-      { title: 'Pants' },
-      { title: 'Jackets' },
-      { title: 'T_Shirts' },
-      { title: 'Suits' },
-      { title: 'Shorts' },
-      { title: 'Sweaters' },
-      { title: 'Ethnic Wear' },
+      { title: 'Thai Sauces & Pastes' },
+      { title: 'Japanese Noodles & Rice' },
+      { title: 'Korean Kimchi & Sauces' },
+      { title: 'Chinese Spices & Oils' },
     ],
   },
   {
-    category: 'Womens Wear',
+    category: 'Fresh & Pantry',
     subCategories: [
-      { title: 'Tops' },
-      { title: 'Pants' },
-      { title: 'Jackets' },
-      { title: 'Dresses' },
-      { title: 'Skirts' },
-      { title: 'Sweaters' },
-      { title: 'Ethnic Wear' },
-      { title: 'Jumpsuits & Rompers' },
+      { title: 'Fresh Vegetables' },
+      { title: 'Leafy Greens & Herbs' },
+      { title: 'Snacks & Namkeen' },
+      { title: 'Beverages & Chai' },
     ],
   },
 ];
@@ -80,14 +60,20 @@ export const FOOTER_BOTTOM_LINKS: TFooterBottomLinks[] = [
     ],
   },
   {
-    title: 'Quick Links',
-    subLinks: [{ title: 'News' }, { title: 'FAQs' }],
+    title: 'Service Areas',
+    subLinks: [
+      { title: 'Helsinki' },
+      { title: 'Espoo' },
+      { title: 'Vantaa' },
+      { title: 'Uusimaa' },
+    ],
   },
   {
     title: 'Contact',
     subLinks: [
-      { title: 'Maharajgunj, Kathmandu' },
-      { title: '9898989898, 01 - 5344556' },
+      { title: 'Hakaniemi torikatu 2, 00530 Helsinki' },
+      { title: '040 815 1341' },
+      { title: 'namaste.indianmarket@gmail.com' },
     ],
   },
 ];
@@ -96,25 +82,40 @@ export const FOOTER_SOCIAL: TFooterSocial[] = [
   {
     link: 'https://www.instagram.com/',
     SocialLogoComponent: (
-      <InstagramLogo size={24} weight="fill" color="#454545" alt="Instagram" />
+      <InstagramLogo
+        size={24}
+        weight="fill"
+        color="#454545"
+        aria-label="Instagram"
+      />
     ),
   },
   {
     link: 'https://www.facebook.com/',
     SocialLogoComponent: (
-      <FacebookLogo size={24} weight="fill" color="#454545" alt="Facebook" />
+      <FacebookLogo
+        size={24}
+        weight="fill"
+        color="#454545"
+        aria-label="Facebook"
+      />
     ),
   },
   {
     link: 'https://www.youtube.com/',
     SocialLogoComponent: (
-      <YoutubeLogo size={24} weight="fill" color="#454545" alt="Youtube" />
+      <YoutubeLogo
+        size={24}
+        weight="fill"
+        color="#454545"
+        aria-label="Youtube"
+      />
     ),
   },
   {
     link: 'https://www.tiktok.com/',
     SocialLogoComponent: (
-      <TiktokLogo size={24} weight="fill" color="#454545" alt="Tiktok" />
+      <TiktokLogo size={24} weight="fill" color="#454545" aria-label="Tiktok" />
     ),
   },
 ];

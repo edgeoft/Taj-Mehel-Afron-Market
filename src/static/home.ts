@@ -3,32 +3,32 @@ import { images } from '@/assets';
 export const features = [
   {
     id: 1,
-    title: 'Value for money',
-    description: 'We offer competitive prices on thousand of items.',
+    title: 'Authentic products',
+    description: 'Genuine Indian brands and ingredients you know and trust.',
     icon: 'currency-circle-dollar',
   },
   {
     id: 2,
     title: 'Fast delivery',
-    description: 'Quick delivery to get your items to you faster.',
+    description: 'Same-day and next-day delivery across Helsinki metro area.',
     icon: 'truck',
   },
   {
     id: 3,
     title: 'Easy payments',
-    description: 'Flexible payment plans to suit your budget.',
+    description: 'Secure checkout with cards and popular payment methods.',
     icon: 'credit-card',
   },
   {
     id: 4,
-    title: 'Seamless Online Shopping',
-    description: 'Smooth browsing and secure checkout experience.',
+    title: 'Fresh & quality',
+    description: 'Carefully sourced groceries with quality you can taste.',
     icon: 'laptop',
   },
   {
     id: 5,
-    title: 'Warranty & Protection',
-    description: 'Peace of mind with every purchase.',
+    title: 'Friendly service',
+    description: 'Personal support from our team at Hakaniemi, Helsinki.',
     icon: 'thumbs-up',
   },
 ];
@@ -36,68 +36,65 @@ export const features = [
 export const offers = [
   {
     id: 1,
-    category: 'Bedroom',
-    title: '20% off on bedroom furnitures',
-    offerTill: 'Sept',
+    category: 'Fresh Vegetables',
+    title: '15% off on fresh herbs & greens',
+    offerTill: 'Jun',
     image: images.offerImgOne,
-    link: '/bedroom',
+    link: '/categories/fresh-vegetables',
   },
   {
     id: 2,
-    category: 'Mobiles & Tablets',
-    title: '10% off on mobile accessories',
-    offerTill: 'June',
+    category: 'Nepalese Products',
+    title: '10% off on gundruk & sel roti mix',
+    offerTill: 'Jun',
     image: images.offerImgTwo,
-    link: '/mobileAndTablets',
+    link: '/categories/nepalese-products',
   },
   {
     id: 3,
-    category: 'Computers & Laptops',
-    title: 'Freebies on every laptop purchase',
-    offerTill: 'Sept',
+    category: 'Asian Products',
+    title: 'Buy 2 get 1 on select Asian sauces',
+    offerTill: 'Jul',
     image: images.offerImgThree,
-    link: '/computerAndLaptops',
+    link: '/categories/asian-products',
   },
 ];
 
 export const newArrivalsTabs = [
-  {
-    label: 'Furniture',
-    value: 'furniture',
-  },
-  {
-    label: 'Electronics',
-    value: 'electronics',
-  },
+  { label: 'Staples', value: 'staples' },
+  { label: 'Fresh & Asian', value: 'fresh-asian' },
 ];
 
 export const banners = [
   {
     id: 1,
-    tag: 'Summer Sale is here',
-    title: '30% Off on Designer Sofa',
-    description: 'Grab your designer sofa before July!',
+    tag: 'Namaste! Welcome to Our Store.',
+    title: 'Your Trusted Indian Grocery Store',
+    description:
+      'Spices, rice, lentils and more - delivered across Uusimaa Region.',
     image: images.bannerOne,
   },
   {
     id: 2,
-    tag: 'Festive Sale is here',
-    title: '20% Off on Dinner Set',
-    description: 'Grab your dinner set before September!',
+    tag: 'Fresh Produce',
+    title: 'Fresh Vegetables & Everyday Essentials',
+    description:
+      'Shop fresh vegetables, herbs, fruits, and authentic ingredients for your favorite Indian recipes.',
     image: images.bannerFour,
   },
   {
     id: 3,
-    tag: 'Bulk Sale is here',
-    title: '20% Off on Bedroom',
-    description: 'Grab your bedroom set before September!',
+    tag: 'Now Open in Hakaniemi',
+    title: 'Authentic Indian Groceries in Helsinki',
+    description:
+      'Your one-stop destination for Indian spices, groceries, fresh produce, and everyday essentials.',
     image: images.bannerTwo,
   },
   {
     id: 4,
-    tag: 'Festive Sale is here',
-    title: '20% Off on Mobile Phone',
-    description: 'Grab your Mobile set before January!',
+    tag: 'Fresh arrivals',
+    title: 'New Spices & Masalas',
+    description: 'Discover fresh arrivals from trusted Indian brands.',
     image: images.bannerThree,
   },
 ];

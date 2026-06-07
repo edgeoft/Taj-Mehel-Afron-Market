@@ -3,18 +3,12 @@ import { TBreadCrumb } from '@/types/generic';
 
 export const breadCrumb: TBreadCrumb = [
   { id: '1', title: 'Home', href: '/' },
-  {
-    id: '2',
-    title: 'Sofa',
-  },
-  {
-    id: '3',
-    title: 'King Sofa',
-  },
+  { id: '2', title: 'Rice & Grains' },
+  { id: '3', title: 'Daawat' },
 ];
 
 export const activeProductInfo = {
-  name: 'Single Designer Sofa',
+  name: 'Daawat',
   image: [
     { name: 'Image One', src: images.productImgOne },
     { name: 'Image Two', src: images.productImgTwo },
@@ -28,79 +22,48 @@ export const activeProductInfo = {
 };
 
 export const availableColors = [
-  {
-    name: 'Red',
-    color: '#FF0000',
-  },
-  {
-    name: 'Green',
-    color: 'green',
-  },
-  {
-    name: 'Blue',
-    color: 'blue',
-  },
+  { name: '1 kg', color: '#FF9933' },
+  { name: '2 kg', color: '#138808' },
+  { name: '5 kg', color: '#212121' },
 ];
 
 export const availableSizes = [
-  {
-    name: '13x24',
-  },
-  {
-    name: '16x24',
-  },
-  {
-    name: '20x24',
-  },
+  { name: '1 kg' },
+  { name: '2 kg' },
+  { name: '5 kg' },
 ];
 
 export const productInfoTabs = [
-  {
-    label: 'Product Description',
-    value: 'productDesc',
-  },
-  {
-    label: 'Product Specification',
-    value: 'productSpecs',
-  },
-  {
-    label: 'Review(123)',
-    value: 'review',
-  },
+  { label: 'Product Description', value: 'productDesc' },
+  { label: 'Product Specification', value: 'productSpecs' },
+  { label: 'Review(123)', value: 'review' },
 ];
 
 export const productSpecData = [
-  {
-    label: 'Brand',
-    value: 'No Brand',
-  },
-  {
-    label: 'SKU',
-    value: '12313514351235134',
-  },
-  {
-    label: 'Wood',
-    value: 'Rosewood',
-  },
+  { label: 'Brand', value: 'India Gate' },
+  { label: 'SKU', value: 'NIM-RICE-BAS-5KG' },
+  { label: 'Origin', value: 'India' },
+  { label: 'Weight', value: '5 kg' },
+  { label: 'Storage', value: 'Store in a cool, dry place' },
 ];
 
 export const productReviewData = [
   {
-    name: 'Kristin Watson',
+    name: 'Priya Sharma',
     profile: images.productImgOne,
-    rating: 4,
-    review: `This sofa exceeded my expectations! The cushions are plush yet supportive, and the fabric is soft to the touch. It adds a modern, stylish look to my living room, and I’ve received so many compliments from guests. Highly recommend!`,
+    rating: 5,
+    review: `The basmati rice is excellent — long grains and wonderful aroma. Perfect for biryani. Delivery to Espoo was fast and the packaging was neat.`,
   },
   {
-    name: 'Jacob Jones',
+    name: 'Rajesh Kumar',
     profile: images.productImgTwo,
-    rating: 4,
-    review: `I was worried this sofa might be too big for my apartment, but it’s the perfect size. It’s compact yet spacious enough to lounge on comfortably. The color is exactly as pictured, and it’s easy to clean. Very satisfied with this purchase.`,
+    rating: 5,
+    review: `Finally found authentic Indian groceries in Helsinki! The quality is consistent and prices are fair. Namaste Indian Market is now my go-to store.`,
   },
   {
-    name: 'Jane Cooper',
+    name: 'Anita Patel',
     profile: images.productImgThree,
     rating: 4,
-    review: `For the price, this sofa is an amazing deal. The build quality is solid, and it feels sturdy. The fabric is durable, and the design is both functional and attractive. It’s comfortable enough for daily use, and I’m very happy with my purchase.`,
+    review: `Great selection of spices and staples. The team at Hakaniemi is very helpful. Highly recommend for anyone missing home flavours in Finland.`,
   },
 ];

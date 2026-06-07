@@ -1,27 +1,112 @@
 @import '../../abstracts/variables';
+@import '../../abstracts/colors';
 
-.bannerSliders-container {
-  .bannerSliders-container-heading-2 {
-    font-size: 4rem !important;
+.bannerSliders-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.bannerSliders-carousel {
+  position: relative;
+  width: 100%;
+
+  .mantine-Carousel-indicators {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0 2.4rem;
+    justify-content: flex-start;
+
+    .mantine-Carousel-indicator {
+      background-color: rgba($color-neutral--1, 0.55);
+
+      &[data-active] {
+        background-color: $color-orange;
+      }
+    }
   }
 
+  @media (min-width: $screen-md) {
+    .mantine-Carousel-indicators {
+      padding: 0 3.2rem;
+      bottom: 2.4rem;
+    }
+  }
+}
+
+.bannerSliders-container {
+  position: relative;
+  width: 100%;
+  min-height: 26.8rem;
+  height: 41.9rem;
+  overflow: hidden;
+  border-radius: 0.4rem;
+
   .bannerSliders-container-image {
-    max-height: 41.9rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .bannerSliders-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      rgba(33, 33, 33, 0.78) 0%,
+      rgba(33, 33, 33, 0.58) 45%,
+      rgba(33, 33, 33, 0.28) 100%
+    );
+  }
+
+  .bannerSliders-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 2.4rem;
+    max-width: 64rem;
+  }
+
+  .bannerSliders-tag {
+    color: $color-yellow;
+    font-weight: 700;
+  }
+
+  .bannerSliders-container-heading-2 {
+    color: $color-neutral--1;
+    font-size: 4rem !important;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .bannerSliders-description {
+    color: rgba($color-neutral--1, 0.92);
+  }
+
+  @media (min-width: $screen-md) {
+    .bannerSliders-content {
+      padding: 3.2rem;
+    }
   }
 
   @media (max-width: $screen-md) {
-    .bannerSliders-container-image {
-      height: 40rem;
-    }
+    height: 36rem;
   }
 
   @media (max-width: $screen-sm) {
+    min-height: 26.8rem;
+    height: 32rem;
+
+    .bannerSliders-content {
+      padding: 2.4rem;
+      padding-bottom: 5.6rem;
+    }
+
     .bannerSliders-container-heading-2 {
       font-size: 2.4rem !important;
       line-height: 2.8rem;
-    }
-    .bannerSliders-container-image {
-      height: 26.8rem;
     }
   }
 }

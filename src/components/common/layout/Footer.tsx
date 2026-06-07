@@ -33,14 +33,14 @@ const Footer = () => {
                 <Link href="/">
                   <Image
                     src={images.mainLogo}
-                    alt="Furniture Logo"
-                    width={156.97}
-                    height={48}
+                    alt="Namaste Indian Market logo"
+                    width={193}
+                    height={54}
                   />
                 </Link>
                 <Text className="body-2 text-left" pt={16} c={'neutral.7'}>
-                  Where style meets technology, elevating every corner of your
-                  home
+                  Authentic Indian groceries in Helsinki. Delivering across
+                  Helsinki, Espoo, Vantaa and Uusimaa.
                 </Text>
               </Box>
               <Box>
@@ -136,7 +136,9 @@ const Footer = () => {
           </Flex>
 
           <Box className="footer-container-copyright">
-            <Text className="body-2">&copy;2024. All Rights Reserved.</Text>
+            <Text className="body-2">
+              &copy;2026 Namaste Indian Market. All Rights Reserved.
+            </Text>
           </Box>
         </Container>
       </footer>

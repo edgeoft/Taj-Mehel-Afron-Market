@@ -36,7 +36,7 @@ const MyCart = () => {
                 c={'secondary.6'}
                 lineClamp={1}
               >
-                Rs. 5,00,...
+                €43,44
               </Text>
             </Box>
           }

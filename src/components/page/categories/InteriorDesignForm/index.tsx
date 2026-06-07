@@ -22,7 +22,7 @@ const InteriorDesignForm = ({ close }: Props) => {
     validateInputOnChange: true,
     initialValues: {
       name: '',
-      phoneCode: '+977',
+      phoneCode: '+358',
       phoneNumber: '',
       category: '',
       description: '',
@@ -60,12 +60,12 @@ const InteriorDesignForm = ({ close }: Props) => {
         </Stack>
 
         <Stack gap={16}>
-          <FormSectionHeading title="About Interior" />
+          <FormSectionHeading title="Product request" />
 
           <SelectInput
             withAsterisk
             label="Select Category"
-            placeholder="Please select category "
+            placeholder="Please select a grocery category"
             data={categories}
             key={form.key('category')}
             {...form.getInputProps('category')}
@@ -73,7 +73,7 @@ const InteriorDesignForm = ({ close }: Props) => {
 
           <TextArea
             withAsterisk
-            label="Describe what you want?"
+            label="What product are you looking for?"
             placeholder="Enter your message here"
             key={form.key('description')}
             {...form.getInputProps('description')}

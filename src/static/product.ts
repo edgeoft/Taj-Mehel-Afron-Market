@@ -1,461 +1,334 @@
 import { images } from '@/assets';
 import { TBreadCrumb } from '@/types/generic';
+import { Product } from '@/types/product';
 
 export const breadCrumb: TBreadCrumb = [
   { id: '1', title: 'Home', href: '/' },
   {
     id: '2',
-    title: 'Furniture',
-    href: '/categories/furniture',
+    title: 'Groceries',
+    href: '/categories/groceries',
   },
   {
     id: '3',
-    title: 'Living Room',
+    title: 'Rice & Grains',
   },
 ];
 
-//Need to remove this dummy date after api integration
+const indianProducts: Product[] = [
+  {
+    id: 1,
+    name: 'Daawat',
+    category: 'Rice & Grains',
+    description:
+      'Premium aged basmati rice with long grains — perfect for biryani, pulao and everyday meals.',
+    price: '14.99',
+    discountedPrice: '12.99',
+    discountPercent: 13,
+    rating: 4.8,
+    noOfRating: 124,
+    image: [images.productImgOne],
+  },
+  {
+    id: 2,
+    name: 'Sona Mansoori Rice',
+    category: 'Spices & Masalas',
+    description:
+      'Aromatic blend of ground spices for curries, dals and traditional Indian cooking.',
+    price: '3.49',
+    discountPercent: 0,
+    rating: 4.9,
+    noOfRating: 89,
+    image: [images.productImgTwo],
+  },
+  {
+    id: 3,
+    name: 'Kala chana',
+    category: 'Lentils & Pulses',
+    description:
+      'High-quality toor dal for sambar, dal tadka and everyday home cooking.',
+    price: '5.99',
+    discountedPrice: '4.99',
+    discountPercent: 17,
+    rating: 4.7,
+    noOfRating: 56,
+    image: [images.productImgThree],
+  },
+  {
+    id: 4,
+    name: 'Wai Wai ',
+    category: 'Snacks & Namkeen',
+    description:
+      'Crispy and savoury Indian snack — ideal for tea time or festive gatherings.',
+    price: '2.99',
+    discountPercent: 0,
+    rating: 4.6,
+    noOfRating: 42,
+    image: [images.productImgFour],
+  },
+];
+
+export const nepaleseProducts: Product[] = [
+  {
+    id: 101,
+    name: '2PM Hot & Spicy Cracker',
+    category: 'Nepalese Products',
+    description:
+      'Traditional fermented leafy greens — essential for Nepali gundruk soup and curries.',
+    price: '4.99',
+    discountedPrice: '3.99',
+    discountPercent: 20,
+    rating: 4.8,
+    noOfRating: 67,
+    image: [images.productImgFive],
+  },
+  {
+    id: 102,
+    name: 'BB Red Label Tea',
+    category: 'Nepalese Products',
+    description:
+      'Ready-to-use flour mix for authentic sel roti — a festive Nepali ring-shaped bread.',
+    price: '3.49',
+    discountPercent: 0,
+    rating: 4.7,
+    noOfRating: 45,
+    image: [images.productImgSix],
+  },
+  {
+    id: 103,
+    name: 'Birds Eye Chilli',
+    category: 'Nepalese Products',
+    description:
+      'Combo pack of rice, lentils and spices for a classic Nepali dal bhat meal.',
+    price: '11.99',
+    discountedPrice: '9.99',
+    discountPercent: 17,
+    rating: 4.9,
+    noOfRating: 88,
+    image: [images.productImgSeven],
+  },
+  {
+    id: 104,
+    name: 'CENTURY Momo Masala',
+    category: 'Nepalese Products',
+    description:
+      'Spicy and tangy Nepali pickle blend — perfect with dal bhat and snacks.',
+    price: '3.99',
+    discountPercent: 0,
+    rating: 4.6,
+    noOfRating: 52,
+    image: [images.productImgEight],
+  },
+];
+
+export const asianProducts: Product[] = [
+  {
+    id: 201,
+    name: 'Thai Red Curry Paste',
+    category: 'Asian Products',
+    description:
+      'Authentic Thai red curry paste for rich, aromatic curries in minutes.',
+    price: '2.99',
+    discountPercent: 0,
+    rating: 4.7,
+    noOfRating: 74,
+    image: [images.productImgOne],
+  },
+  {
+    id: 202,
+    name: 'Japanese Soba Noodles',
+    category: 'Asian Products',
+    description:
+      'Premium buckwheat soba noodles — ideal for hot soups or cold salads.',
+    price: '3.49',
+    discountedPrice: '2.99',
+    discountPercent: 14,
+    rating: 4.8,
+    noOfRating: 61,
+    image: [images.productImgTwo],
+  },
+  {
+    id: 203,
+    name: 'Korean Kimchi (Spicy)',
+    category: 'Asian Products',
+    description:
+      'Traditional fermented kimchi with bold spice — a staple of Korean cuisine.',
+    price: '5.99',
+    discountPercent: 0,
+    rating: 4.9,
+    noOfRating: 93,
+    image: [images.productImgThree],
+  },
+  {
+    id: 204,
+    name: 'Chinese Sesame Oil',
+    category: 'Asian Products',
+    description:
+      'Toasted sesame oil for stir-fries, dumplings and finishing Asian dishes.',
+    price: '4.49',
+    discountPercent: 0,
+    rating: 4.6,
+    noOfRating: 48,
+    image: [images.productImgFour],
+  },
+];
+
+export const freshVegetableProducts: Product[] = [
+  {
+    id: 301,
+    name: 'Fresh Coriander Bunch',
+    category: 'Fresh Vegetables',
+    description:
+      'Aromatic fresh coriander — essential for curries, chutneys and garnishing.',
+    price: '1.49',
+    discountPercent: 0,
+    rating: 4.8,
+    noOfRating: 112,
+    image: [images.categoryImgOne],
+  },
+  {
+    id: 302,
+    name: 'Fresh Ginger (250 g)',
+    category: 'Fresh Vegetables',
+    description:
+      'Firm, fragrant ginger root for chai, curries and Asian cooking.',
+    price: '2.49',
+    discountPercent: 0,
+    rating: 4.7,
+    noOfRating: 86,
+    image: [images.categoryImgTwo],
+  },
+  {
+    id: 303,
+    name: 'Green Chillies (200 g)',
+    category: 'Fresh Vegetables',
+    description:
+      'Fresh green chillies for authentic heat in Indian and Nepali dishes.',
+    price: '1.99',
+    discountedPrice: '1.49',
+    discountPercent: 25,
+    rating: 4.6,
+    noOfRating: 64,
+    image: [images.categoryImgThree],
+  },
+  {
+    id: 304,
+    name: 'Fresh Spinach (250 g)',
+    category: 'Fresh Vegetables',
+    description:
+      'Tender leafy spinach for saag, salads and everyday healthy cooking.',
+    price: '2.99',
+    discountPercent: 0,
+    rating: 4.5,
+    noOfRating: 58,
+    image: [images.categoryImgFour],
+  },
+];
+
 export const products = [
-  {
-    id: 1,
-    name: 'Single designer sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgOne],
-  },
-  {
-    id: 2,
-    name: 'Personal sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgTwo],
-  },
-  {
-    id: 3,
-    name: 'Table set for cafe',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgThree],
-  },
-  {
-    id: 4,
-    name: 'Dinning set',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgFour],
-  },
+  ...indianProducts,
+  ...nepaleseProducts,
+  ...asianProducts,
+  ...freshVegetableProducts,
 ];
 
-//Popular funitures
-export const popularFunitures = [
-  {
-    id: 1,
-    name: 'Single designer sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgOne],
-  },
-  {
-    id: 2,
-    name: 'Personal sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgTwo],
-  },
-  {
-    id: 3,
-    name: 'Table set for cafe',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgThree],
-  },
-  {
-    id: 4,
-    name: 'Dinning set',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgFour],
-  },
-  {
-    id: 5,
-    name: 'Single designer sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgOne],
-  },
-  {
-    id: 6,
-    name: 'Personal sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgTwo],
-  },
-  {
-    id: 7,
-    name: 'Table set for cafe',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgThree],
-  },
-  {
-    id: 8,
-    name: 'Dinning set',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgFour],
-  },
-  {
-    id: 9,
-    name: 'Single designer sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgOne],
-  },
-  {
-    id: 10,
-    name: 'Personal sofa',
-    category: 'Sofa',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgTwo],
-  },
-  {
-    id: 11,
-    name: 'Table set for cafe',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgThree],
-  },
-  {
-    id: 12,
-    name: 'Dinning set',
-    category: 'Table',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgFour],
-  },
-];
+const repeatProducts = (items: Product[], count: number): Product[] =>
+  Array.from({ length: count }, (_, i) => ({
+    ...items[i % items.length],
+    id: i + 1,
+  }));
 
-//Popular electronics
-export const popularElectronics = [
-  {
-    id: 1,
-    name: 'Huewei GT 3',
-    category: 'Computers & Laptops',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgFive],
-  },
-  {
-    id: 2,
-    name: 'Xiaomi TV P1E 43”',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgSix],
-  },
-  {
-    id: 3,
-    name: 'IPhone 15 Pro Max',
-    category: 'Mobiles & Tablets',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgSeven],
-  },
-  {
-    id: 4,
-    name: 'Samsung Crystal UHD',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgEight],
-  },
-  {
-    id: 5,
-    name: 'Huewei GT 3',
-    category: 'Computers & Laptops',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgFive],
-  },
-  {
-    id: 6,
-    name: 'Xiaomi TV P1E 43”',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgSix],
-  },
-  {
-    id: 7,
-    name: 'IPhone 15 Pro Max',
-    category: 'Mobiles & Tablets',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgSeven],
-  },
-  {
-    id: 8,
-    name: 'Samsung Crystal UHD',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgEight],
-  },
-  {
-    id: 9,
-    name: 'Huewei GT 3',
-    category: 'Computers & Laptops',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '67000',
-    discountedPrice: '55000',
-    discountPercent: 5,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgFive],
-  },
-  {
-    id: 10,
-    name: 'Xiaomi TV P1E 43”',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '35000',
-    discountPercent: 0,
-    rating: 2,
-    noOfRating: 5,
-    image: [images.productImgSix],
-  },
-  {
-    id: 11,
-    name: 'IPhone 15 Pro Max',
-    category: 'Mobiles & Tablets',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '37000',
-    discountedPrice: '35000',
-    discountPercent: 2,
-    rating: 5,
-    noOfRating: 5,
-    image: [images.productImgSeven],
-  },
-  {
-    id: 12,
-    name: 'Samsung Crystal UHD',
-    category: 'Entertainment',
-    description:
-      'The best sofa for your home which is specially designerd for you comfort and',
-    price: '29000',
-    discountPercent: 0,
-    rating: 4.5,
-    noOfRating: 5,
-    image: [images.productImgEight],
-  },
-];
+export const popularStaples = repeatProducts(indianProducts, 12);
+
+export const popularSnacks = repeatProducts(
+  [
+    {
+      id: 1,
+      name: 'Maggi Masala Noodles',
+      category: 'Snacks & Namkeen',
+      description:
+        'Classic masala instant noodles — a quick and tasty favourite.',
+      price: '1.29',
+      discountedPrice: '0.99',
+      discountPercent: 23,
+      rating: 4.5,
+      noOfRating: 210,
+      image: [images.productImgFive],
+    },
+    {
+      id: 2,
+      name: 'Tata Tea Premium',
+      category: 'Beverages',
+      description:
+        'Rich and robust Indian tea blend for the perfect morning chai.',
+      price: '4.49',
+      discountPercent: 0,
+      rating: 4.8,
+      noOfRating: 95,
+      image: [images.productImgSix],
+    },
+    {
+      id: 3,
+      name: 'Amul Ghee',
+      category: 'Dairy & Refrigerated',
+      description:
+        'Pure cow ghee for cooking, sweets and authentic Indian flavour.',
+      price: '8.99',
+      discountedPrice: '7.99',
+      discountPercent: 11,
+      rating: 4.9,
+      noOfRating: 78,
+      image: [images.productImgSeven],
+    },
+    {
+      id: 4,
+      name: "Mother's Recipe Mango Pickle",
+      category: 'Pickles & Chutneys',
+      description:
+        'Tangy and spicy mango pickle — a staple on every Indian table.',
+      price: '3.99',
+      discountPercent: 0,
+      rating: 4.7,
+      noOfRating: 63,
+      image: [images.productImgEight],
+    },
+  ],
+  12
+);
+
+export const popularNepalese = repeatProducts(nepaleseProducts, 8);
+export const popularAsian = repeatProducts(asianProducts, 8);
+export const popularFreshVegetables = repeatProducts(freshVegetableProducts, 8);
+
+/** @deprecated Use popularStaples */
+export const popularFunitures = popularStaples;
+
+/** @deprecated Use popularSnacks */
+export const popularElectronics = popularSnacks;
 
 export const sorting = [
-  {
-    id: 1,
-    label: 'Featured',
-    value: 'featured',
-  },
-  {
-    id: 2,
-    label: 'Latest',
-    value: 'latest',
-  },
-  {
-    id: 3,
-    label: 'Most Popular',
-    value: 'most-popular',
-  },
-  {
-    id: 4,
-    label: 'Least Popular',
-    value: 'least-popular',
-  },
-  {
-    id: 5,
-    label: 'Highest Price',
-    value: 'highest-price',
-  },
-  {
-    id: 6,
-    label: 'Lowest Price',
-    value: 'lowest-price',
-  },
+  { id: 1, label: 'Featured', value: 'featured' },
+  { id: 2, label: 'Latest', value: 'latest' },
+  { id: 3, label: 'Most Popular', value: 'most-popular' },
+  { id: 4, label: 'Least Popular', value: 'least-popular' },
+  { id: 5, label: 'Highest Price', value: 'highest-price' },
+  { id: 6, label: 'Lowest Price', value: 'lowest-price' },
 ];
 
 export const availabilty = [
-  {
-    id: 1,
-    label: 'In Stock',
-    value: 'in-stock',
-  },
-  {
-    id: 2,
-    label: 'Sale',
-    value: 'sale',
-  },
-  {
-    id: 3,
-    label: 'Out Of Stock',
-    value: 'out-of-stock',
-  },
+  { id: 1, label: 'In Stock', value: 'in-stock' },
+  { id: 2, label: 'Sale', value: 'sale' },
+  { id: 3, label: 'Out Of Stock', value: 'out-of-stock' },
 ];
 
 export const categories = [
-  {
-    id: 1,
-    label: 'Sofas & Couches',
-    value: 'sofas-couches',
-  },
-  {
-    id: 2,
-    label: 'Coffee Tables',
-    value: 'coffee-tables',
-  },
-  {
-    id: 3,
-    label: 'TV Stands & Entertainment Units',
-    value: 'tv-stands',
-  },
-  {
-    id: 4,
-    label: 'Recliners & Armchairs',
-    value: 'recliners-armchairs',
-  },
-  {
-    id: 5,
-    label: 'Console Tables',
-    value: 'console-tables',
-  },
-  {
-    id: 6,
-    label: 'Bookshelves & Display Units',
-    value: 'bookshelves-display-units',
-  },
+  { id: 1, label: 'Rice & Grains', value: 'rice-grains' },
+  { id: 2, label: 'Lentils & Pulses', value: 'lentils-pulses' },
+  { id: 3, label: 'Spices & Masalas', value: 'spices-masalas' },
+  { id: 4, label: 'Flours & Atta', value: 'flours-atta' },
+  { id: 5, label: 'Pickles & Chutneys', value: 'pickles-chutneys' },
+  { id: 6, label: 'Snacks & Namkeen', value: 'snacks-namkeen' },
+  { id: 7, label: 'Nepalese Products', value: 'nepalese-products' },
+  { id: 8, label: 'Asian Products', value: 'asian-products' },
+  { id: 9, label: 'Fresh Vegetables', value: 'fresh-vegetables' },
 ];

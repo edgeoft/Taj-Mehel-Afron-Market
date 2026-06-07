@@ -11,24 +11,24 @@ import { banners } from '@/static/home';
 
 import '@/styles/page/home/__bannerSlider.scss';
 
-type Props = {};
-
-function BannerSliders({}: Props) {
+function BannerSliders() {
   const autoplay = useRef(Autoplay({ delay: 3000 }));
 
   return (
-    <Container pos={'relative'}>
+    <Container pos="relative" className="bannerSliders-wrapper">
       <CardSlider
+        className="bannerSliders-carousel card-slider__carousel"
+        slideGap={0}
         withControls={false}
         withIndicators
-        loop={true}
+        loop
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
       >
-        {banners?.map((banner, index) => (
-          <CarouselSlide key={banner?.id}>
-            <Slide index={index} banner={banner} />
+        {banners.map((banner) => (
+          <CarouselSlide key={banner.id}>
+            <Slide banner={banner} />
           </CarouselSlide>
         ))}
       </CardSlider>

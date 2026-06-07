@@ -1,5 +1,5 @@
 //Import all the images inside this folder
-import mainLogo from './logo/main-logo.svg';
+import mainLogo from './logo/main-logo.png';
 import menu from './navbar/Menu.svg';
 
 //Images to be removed later
@@ -17,6 +17,10 @@ import categoryImgThree from './dummy/category-3.svg';
 import categoryImgFour from './dummy/category-4.svg';
 import categoryImgFive from './dummy/category-5.svg';
 import categoryImgSix from './dummy/category-6.svg';
+import categoryImgSeven from './dummy/category-7.svg';
+import categoryImgEight from './dummy/category-8.svg';
+import categoryImgNine from './dummy/category-9.svg';
+import categoryImgTen from './dummy/category-10.svg';
 import offerImgOne from './dummy/offer-1.svg';
 import offerImgTwo from './dummy/offer-2.svg';
 import offerImgThree from './dummy/offer-3.svg';
@@ -25,10 +29,10 @@ import offerImgThree from './dummy/offer-3.svg';
 import requirementBanner from './home/requirement-banner.svg';
 import requirementBannerMobile from './home/requirement-banner-mobile.jpg';
 
-import bannerOne from './banners/banner-1.svg';
-import bannerTwo from './banners/banner-2.jpeg';
+import bannerOne from './banners/banner-1.png';
+import bannerTwo from './banners/banner-2.png';
 import bannerThree from './banners/banner-3.png';
-import bannerFour from './banners/banner-4.webp';
+import bannerFour from './banners/banner-4.png';
 
 //placeholder
 import favouritePlaceholder from './placeholder/favourite.svg';
@@ -78,6 +82,10 @@ const images = {
   categoryImgFour,
   categoryImgFive,
   categoryImgSix,
+  categoryImgSeven,
+  categoryImgEight,
+  categoryImgNine,
+  categoryImgTen,
   offerImgOne,
   offerImgTwo,
   offerImgThree,
