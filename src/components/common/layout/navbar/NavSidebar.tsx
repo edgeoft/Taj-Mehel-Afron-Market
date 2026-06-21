@@ -7,6 +7,7 @@ import { X } from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import CategoryListing from './CategoryListing';
 import FreeDeliveryInfo from './FreeDeliveryInfo';
+import Logo from '@/components/common/layout/Logo';
 
 const NavSidebar = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -43,14 +44,7 @@ const NavSidebar = () => {
               className="cursor-pointer"
               onClick={close}
             />
-            <Image
-              src={images.mainLogo}
-              alt="Namaste Indian Market logo"
-              width={114}
-              height={32}
-              priority
-              className="navbar-logo"
-            />
+            <Logo size="sm" withLink={false} className="navbar-logo" />
           </Flex>
           <CategoryListing close={close} />
           <FreeDeliveryInfo />

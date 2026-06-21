@@ -22,7 +22,7 @@ const ProductImageCard = ({
       w={100}
       h={75}
       radius={0}
-      bd={activeImageIdx === index ? '2px solid #FF9933' : 'none'}
+      bd={activeImageIdx === index ? '2px solid #0D1F3D' : 'none'}
       onClick={() => {
         setActiveImageIdx(index);
       }}

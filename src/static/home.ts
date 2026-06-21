@@ -28,7 +28,7 @@ export const features = [
   {
     id: 5,
     title: 'Friendly service',
-    description: 'Personal support from our team at Hakaniemi, Helsinki.',
+    description: 'Personal support from our team at Tikkuraitti, Vantaa.',
     icon: 'thumbs-up',
   },
 ];
@@ -44,11 +44,11 @@ export const offers = [
   },
   {
     id: 2,
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     title: '10% off on gundruk & sel roti mix',
     offerTill: 'Jun',
     image: images.offerImgTwo,
-    link: '/categories/nepalese-products',
+    link: '/categories/indian-products',
   },
   {
     id: 3,
@@ -61,15 +61,15 @@ export const offers = [
 ];
 
 export const newArrivalsTabs = [
-  { label: 'Staples', value: 'staples' },
+  { label: 'Groceries', value: 'staples' },
   { label: 'Fresh & Asian', value: 'fresh-asian' },
 ];
 
 export const banners = [
   {
     id: 1,
-    tag: 'Namaste! Welcome to Our Store.',
-    title: 'Your Trusted Indian Grocery Store',
+    tag: 'Welcome to Our Store.',
+    title: 'Your Trusted Afro-Asian Market',
     description:
       'Spices, rice, lentils and more - delivered across Uusimaa Region.',
     image: images.bannerOne,
@@ -84,10 +84,10 @@ export const banners = [
   },
   {
     id: 3,
-    tag: 'Now Open in Hakaniemi',
-    title: 'Authentic Indian Groceries in Helsinki',
+    tag: 'Located at Tikkuraitti 13, 01300 Vantaa',
+    title: 'Authentic Afro-Asian Groceries in Vantaa',
     description:
-      'Your one-stop destination for Indian spices, groceries, fresh produce, and everyday essentials.',
+      'Your one-stop destination for Afro-Asian spices, groceries, fresh produce, and everyday essentials.',
     image: images.bannerTwo,
   },
   {

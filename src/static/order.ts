@@ -95,7 +95,7 @@ export const orderDetail = {
   orderId: 20001,
   orderItems: [
     {
-      sellerName: 'Namaste Indian Market',
+      sellerName: 'Taj Mehal Afro-Asian Market',
       subTotal: 32.0,
       deliveryCharge: 4.99,
       total: 36.99,
@@ -130,7 +130,7 @@ export const orderDetail = {
       ],
     },
     {
-      sellerName: 'Namaste Indian Market',
+      sellerName: 'Taj Mehal Afro-Asian Market',
       subTotal: 12.0,
       deliveryCharge: 4.99,
       total: 16.99,

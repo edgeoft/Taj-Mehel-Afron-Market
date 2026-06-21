@@ -29,8 +29,8 @@ import offerImgThree from './dummy/offer-3.svg';
 import requirementBanner from './home/requirement-banner.svg';
 import requirementBannerMobile from './home/requirement-banner-mobile.jpg';
 
-import bannerOne from './banners/banner-1.png';
-import bannerTwo from './banners/banner-2.png';
+import bannerOne from './banners/banner-1.jpg';
+import bannerTwo from './banners/banner-3.jpg';
 import bannerThree from './banners/banner-3.png';
 import bannerFour from './banners/banner-4.png';
 

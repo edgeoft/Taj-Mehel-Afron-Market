@@ -1,11 +1,9 @@
-import { images } from '@/assets';
 import { Container, Flex, Title } from '@mantine/core';
-import Image from 'next/image';
 import DeliveryAreaSelection from './DeliveryAreaSelection';
 import NavbarRight from './NavbarRight';
 import NavbarSearch from './NavbarSearch';
 import MegaMenu from './MegaMenu';
-import Link from 'next/link';
+import Logo from '@/components/common/layout/Logo';
 import NavSidebar from './NavSidebar';
 
 const Navbar = () => {
@@ -13,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar">
       <Container h={{ base: 112, lg: 72 }}>
         <Title order={1} className="hidden">
-          Namaste Indian Market
+          Taj Mehel Afro Asian Market
         </Title>
         <Flex
           justify={'space-between'}
@@ -27,16 +25,7 @@ const Navbar = () => {
             gap={10}
           >
             <NavSidebar />
-            <Link href={'/'}>
-              <Image
-                src={images.mainLogo}
-                alt="Namaste Indian Market logo"
-                width={170}
-                height={48}
-                priority
-                className="navbar-logo"
-              />
-            </Link>
+            <Logo className="navbar-logo" />
             <DeliveryAreaSelection className="navbar-mobile-delivery" />
           </Flex>
           <DeliveryAreaSelection />

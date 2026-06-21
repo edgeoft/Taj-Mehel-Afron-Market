@@ -23,7 +23,7 @@ export const customerReviews = [
     id: 1,
     name: 'Priya Sharma',
     img: images.productImgOne,
-    review: `Namaste Indian Market has been a lifesaver for our family in Helsinki. Fresh spices, quality rice and friendly service every time we order. Truly authentic Indian groceries!`,
+    review: `Taj Mehal Afro-Asian Market has been a lifesaver for our family in Vantaa. Fresh spices, quality rice and friendly service every time we order. Truly authentic Afro-Asian groceries!`,
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const customerReviews = [
     id: 3,
     name: 'Anita Patel',
     img: images.productImgFive,
-    review: `The store at Hakaniemi is wonderful and their delivery across Uusimaa is excellent. From dal to masala, everything tastes just like home. Thank you Namaste Indian Market!`,
+    review: `The store at Tikkuraitti is wonderful and their delivery across Uusimaa is excellent. From dal to masala, everything tastes just like home. Thank you Taj Mehal Afro-Asian Market!`,
   },
   {
     id: 4,
@@ -47,6 +47,6 @@ export const customerReviews = [
     id: 5,
     name: 'Meera Nair',
     img: images.productImgThree,
-    review: `Clean website, easy checkout and genuine products. Namaste Indian Market is my trusted source for Indian food in Finland. The team is always helpful on the phone too.`,
+    review: `Clean website, easy checkout and genuine products. Taj Mehal Afro-Asian Market is my trusted source for Afro-Asian food in Finland. The team is always helpful on the phone too.`,
   },
 ];

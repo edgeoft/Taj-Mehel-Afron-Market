@@ -9,8 +9,9 @@ type TDeliveryAreaProps = {
 const DeliveryAreaSelection = ({ className }: TDeliveryAreaProps) => {
   return (
     <Select
-      placeholder="Select Delivery Area"
+      placeholder="Deliver to"
       data={NAVBAR_DUMMY_OPT}
+      defaultValue="vantaa"
       leftSection={<MapPin size={16} weight="bold" />}
       leftSectionPointerEvents="none"
       className={`navbar-delivery ${className ? className : ''}`}

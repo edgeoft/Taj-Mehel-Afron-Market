@@ -52,7 +52,7 @@ const NavbarSearch = ({ className, maxWidth }: TNavbarSearch) => {
             className="navbar-search-input"
           >
             <Input
-              placeholder="Search for products, categories or brands..."
+              placeholder="Search Afro-Asian groceries, brands and more..."
               rightSection={
                 <MagnifyingGlass
                   size={24}

@@ -9,7 +9,7 @@ export const cartBreadCrumb: TBreadCrumb = [
 
 export const cartData: TCartData[] = [
   {
-    seller: 'Namaste Indian Market',
+    seller: 'Taj Mehal Afro-Asian Market',
     deliveryCharge: 4.99,
     items: [
       {
@@ -39,7 +39,7 @@ export const cartData: TCartData[] = [
     ],
   },
   {
-    seller: 'Namaste Indian Market',
+    seller: 'Taj Mehal Afro-Asian Market',
     deliveryCharge: 4.99,
     items: [
       {

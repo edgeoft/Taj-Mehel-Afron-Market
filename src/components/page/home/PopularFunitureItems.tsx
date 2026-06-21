@@ -8,7 +8,7 @@ const PopularStaplesItems = () => {
     <Container className="padding-t-72">
       <Flex gap={24} direction={'column'}>
         <SectionHeader
-          title={'Popular Staples'}
+          title={'Popular Groceries'}
           type="description"
           description={'Essential rice, dal and spices for your kitchen'}
           link="/products"

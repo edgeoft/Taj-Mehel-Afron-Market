@@ -2,7 +2,7 @@ import { images } from '@/assets';
 import {
   asianProducts,
   freshVegetableProducts,
-  nepaleseProducts,
+  indianSpecialtyProducts,
   products,
 } from './product';
 
@@ -13,7 +13,7 @@ export const categories = [
   { id: 4, name: 'Snacks & Namkeen', image: images.categoryImgFour },
   { id: 5, name: 'Pickles & Chutneys', image: images.categoryImgFive },
   { id: 6, name: 'Beverages', image: images.categoryImgSix },
-  { id: 7, name: 'Nepalese Products', image: images.categoryImgSeven },
+  { id: 7, name: 'Indian Products', image: images.categoryImgSeven },
   { id: 8, name: 'Asian Products', image: images.categoryImgEight },
   { id: 9, name: 'Fresh Vegetables', image: images.categoryImgNine },
   { id: 10, name: 'Dairy & Refrigerated', image: images.categoryImgTen },
@@ -30,22 +30,22 @@ export const categoryProductsSection = [
   {
     id: 2,
     title: 'Rice & Grains',
-    description: 'Premium basmati, sona masoori and everyday staples',
+    description: 'Premium basmati, sona masoori and everyday rice and grains',
     link: '/products?categoryIds=Rice%20%26%20Grains',
     products: [...products.slice(0, 4), ...products.slice(0, 4)],
   },
   {
     id: 3,
-    title: 'Nepalese Products',
+    title: 'Indian Products',
     description:
-      'Authentic gundruk, sel roti mix, dal bhat and Nepali favourites',
-    link: '/categories/nepalese-products',
-    products: [...nepaleseProducts, ...nepaleseProducts],
+      'Authentic gundruk, sel roti mix, dal bhat and Indian favourites',
+    link: '/categories/indian-products',
+    products: [...indianSpecialtyProducts, ...indianSpecialtyProducts],
   },
   {
     id: 4,
     title: 'Asian Products',
-    description: 'Thai, Japanese, Korean and Chinese pantry essentials',
+    description: 'Thai, Japanese, Korean and Chinese groceries',
     link: '/categories/asian-products',
     products: [...asianProducts, ...asianProducts],
   },

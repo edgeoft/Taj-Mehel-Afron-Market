@@ -17,27 +17,28 @@ import 'yet-another-react-lightbox/plugins/thumbnails.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Namaste Indian Market | Indian Grocery Store in Helsinki',
-    template: '%s | Namaste Indian Market',
+    default: 'Taj Mehal Afro-Asian Market | Grocery Store in Vantaa',
+    template: '%s | Taj Mehal Afro-Asian Market',
   },
   description:
-    'Authentic Indian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa. Spices, rice, lentils, snacks and more at Namaste Indian Market.',
+    'Authentic Afro-Asian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa. Spices, rice, lentils, snacks and more at Taj Mehal Afro-Asian Market.',
   keywords: [
-    'Indian grocery',
-    'Helsinki',
+    'Afro-Asian grocery',
+    'Vantaa',
     'Indian food',
+    'African food',
+    'Asian food',
     'spices',
-    'basmati rice',
-    'Namaste Indian Market',
+    'Taj Mehal Afro-Asian Market',
   ],
-  authors: [{ name: 'Namaste Indian Market' }],
+  authors: [{ name: 'Taj Mehal Afro-Asian Market' }],
   openGraph: {
-    title: 'Namaste Indian Market | Indian Grocery Store in Helsinki',
+    title: 'Taj Mehal Afro-Asian Market | Grocery Store in Vantaa',
     description:
-      'Authentic Indian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa.',
+      'Authentic Afro-Asian groceries delivered across Helsinki, Espoo, Vantaa and Uusimaa.',
     locale: 'en_FI',
     type: 'website',
-    siteName: 'Namaste Indian Market',
+    siteName: 'Taj Mehal Afro-Asian Market',
   },
 };
 
@@ -53,7 +54,7 @@ export default function RootLayout({
       </head>
       <body className={`${figtree.variable}`}>
         <MantineProvider theme={theme}>
-          <NextTopLoader showSpinner={false} color="#FF9933" height={3} />
+          <NextTopLoader showSpinner={false} color="#0D1F3D" height={3} />
           <Navbar />
           {children}
           <Footer />

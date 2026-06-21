@@ -1,11 +1,10 @@
-import { images } from '@/assets';
 import {
   FOOTER_BOTTOM_LINKS,
   FOOTER_CATEGORY_LINKS,
   FOOTER_SOCIAL,
 } from '@/static/footerLinks';
+import Logo from '@/components/common/layout/Logo';
 import { Box, Container, Flex, SimpleGrid, Text } from '@mantine/core';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -30,16 +29,9 @@ const Footer = () => {
               className="footer-container-left"
             >
               <Box maw={{ base: '100%', xs: 237 }}>
-                <Link href="/">
-                  <Image
-                    src={images.mainLogo}
-                    alt="Namaste Indian Market logo"
-                    width={193}
-                    height={54}
-                  />
-                </Link>
+                <Logo size="lg" />
                 <Text className="body-2 text-left" pt={16} c={'neutral.7'}>
-                  Authentic Indian groceries in Helsinki. Delivering across
+                  Authentic Afro-Asian groceries in Vantaa. Delivering across
                   Helsinki, Espoo, Vantaa and Uusimaa.
                 </Text>
               </Box>
@@ -137,7 +129,7 @@ const Footer = () => {
 
           <Box className="footer-container-copyright">
             <Text className="body-2">
-              &copy;2026 Namaste Indian Market. All Rights Reserved.
+              &copy;2026 Taj Mehal Afro-Asian Market. All Rights Reserved.
             </Text>
           </Box>
         </Container>

@@ -22,9 +22,9 @@ const OrderFooterGrid = () => {
     {
       id: 2,
       label: 'Address',
-      value: 'Mannerheimintie 12, 00100 Helsinki',
+      value: 'Tikkuraitti 13, 01300 Vantaa, Finland',
     },
-    { id: 3, label: 'Phone', value: '040 815 1341' },
+    { id: 3, label: 'Phone', value: '044 3011077' },
     { id: 4, label: 'Delivery Date', value: 'Thu, 12 Jun 2026' },
   ];
 

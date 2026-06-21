@@ -20,12 +20,12 @@ const AboutUsContent = () => {
         >
           <AboutUsTitleDescContent
             title="ABOUT US"
-            description="Authentic Indian Groceries in the Heart of Helsinki"
+            description="Authentic Afro-Asian Groceries in the Heart of Vantaa"
           />
           <Box className="aboutUs-imageContainer">
             <Image
               src={images.aboutUsImg}
-              alt="Namaste Indian Market store"
+              alt="Taj Mehal Afro-Asian Market store"
               width={0}
               height={0}
               sizes="100vw"
@@ -33,24 +33,24 @@ const AboutUsContent = () => {
             />
           </Box>
           <Text className="body-1" c={'neutral.7'}>
-            Welcome to Namaste Indian Market, your trusted Indian grocery store
-            at Hakaniemi torikatu 2 in Helsinki. We bring the flavours of home
-            to Finland with a curated selection of spices, rice, lentils,
-            snacks, pickles and everyday essentials from India.
+            Welcome to Taj Mehal Afro-Asian Market, your trusted Afro-Asian
+            grocery store at Tikkuraitti 13 in Vantaa. We bring the flavours of
+            home to Finland with a curated selection of spices, rice, lentils,
+            snacks, pickles and everyday essentials from across Africa and Asia.
           </Text>
           <Text className="body-1" c={'neutral.7'}>
-            Our mission is to make authentic Indian groceries accessible and
+            Our mission is to make authentic Afro-Asian groceries accessible and
             convenient for families across Helsinki, Espoo, Vantaa and Uusimaa.
             Whether you need basmati for biryani, fresh masalas for curry, or
-            your favourite Haldiram snacks, we are here to serve you with care
-            and quality.
+            your favourite snacks, we are here to serve you with care and
+            quality.
           </Text>
         </Flex>
       </Box>
       <Box visibleFrom="lg">
         <Image
           src={images.aboutUsImg}
-          alt="Namaste Indian Market store interior"
+          alt="Taj Mehal Afro-Asian Market store interior"
           width={0}
           height={0}
           sizes="100vw"
@@ -63,7 +63,7 @@ const AboutUsContent = () => {
       <Box visibleFrom="lg">
         <Image
           src={images.ourVisionImg}
-          alt="Fresh Indian groceries at Namaste Indian Market"
+          alt="Fresh Afro-Asian groceries at Taj Mehal Afro-Asian Market"
           width={0}
           height={0}
           sizes="100vw"
@@ -83,12 +83,12 @@ const AboutUsContent = () => {
         >
           <AboutUsTitleDescContent
             title="OUR VISION"
-            description="Bringing the Taste of India Closer to Every Home in Finland"
+            description="Bringing Afro-Asian Flavours Closer to Every Home in Finland"
           />
           <Box className="aboutUs-imageContainer">
             <Image
               src={images.ourVisionImg}
-              alt="Indian spices and staples"
+              alt="Afro-Asian spices and groceries"
               width={0}
               height={0}
               sizes="100vw"
@@ -96,10 +96,11 @@ const AboutUsContent = () => {
             />
           </Box>
           <Text className="body-1" c={'neutral.7'}>
-            Our vision is to become the leading Indian grocery destination in
-            Finland — known for authentic products, reliable delivery and warm,
-            personal service. We aim to connect the Indian diaspora and food
-            lovers with the ingredients that make every meal feel like home.
+            Our vision is to become the leading Afro-Asian grocery destination
+            in Finland — known for authentic products, reliable delivery and
+            warm, personal service. We aim to connect diverse communities and
+            food lovers with the ingredients that make every meal feel like
+            home.
           </Text>
         </Flex>
       </Box>

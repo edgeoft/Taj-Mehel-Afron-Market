@@ -21,7 +21,7 @@ const Newsletter = ({ bg }: Props) => {
             </Title>
 
             <Title order={2} className="heading-1" c={'primary'} mt={4}>
-              Join the Namaste Newsletter
+              Join the Taj Mehal Newsletter
             </Title>
 
             <Text className="body-1" c={'neutral.7'} mt={12}>

@@ -12,7 +12,7 @@ import {
 
 export const FOOTER_CATEGORY_LINKS: TFooterCategoryLinks[] = [
   {
-    category: 'Indian Staples',
+    category: 'Indian Food',
     subCategories: [
       { title: 'Rice & Grains' },
       { title: 'Lentils & Pulses' },
@@ -21,7 +21,7 @@ export const FOOTER_CATEGORY_LINKS: TFooterCategoryLinks[] = [
     ],
   },
   {
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     subCategories: [
       { title: 'Gundruk & Sinki' },
       { title: 'Dal Bhat Essentials' },
@@ -39,7 +39,7 @@ export const FOOTER_CATEGORY_LINKS: TFooterCategoryLinks[] = [
     ],
   },
   {
-    category: 'Fresh & Pantry',
+    category: 'Fresh Food',
     subCategories: [
       { title: 'Fresh Vegetables' },
       { title: 'Leafy Greens & Herbs' },
@@ -71,9 +71,8 @@ export const FOOTER_BOTTOM_LINKS: TFooterBottomLinks[] = [
   {
     title: 'Contact',
     subLinks: [
-      { title: 'Hakaniemi torikatu 2, 00530 Helsinki' },
-      { title: '040 815 1341' },
-      { title: 'namaste.indianmarket@gmail.com' },
+      { title: 'Tikkuraitti 13, Vantaa, Finland, 01300' },
+      { title: '044 3011077' },
     ],
   },
 ];

@@ -60,7 +60,7 @@ export const LoginOTPSection = ({ setCurrentStep }: TLoginOTP) => {
               040 815 1341 {'    '}
               <b
                 onClick={() => setCurrentStep(1)}
-                style={{ color: '#FF9933' }}
+                style={{ color: '#0D1F3D' }}
                 className="cursor-pointer"
               >
                 CHANGE

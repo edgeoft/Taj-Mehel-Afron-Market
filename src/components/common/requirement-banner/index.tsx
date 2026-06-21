@@ -56,8 +56,8 @@ const RequirementBanner = () => {
               c={'neutral.7'}
               w={{ base: '100%', sm: 433 }}
             >
-              Tell us which Indian grocery item you are looking for and we will
-              do our best to source it for you across Helsinki and Uusimaa.
+              Tell us which Afro-Asian grocery item you are looking for and we
+              will do our best to source it for you across Helsinki and Uusimaa.
             </Text>
           </Box>
 

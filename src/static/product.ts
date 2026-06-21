@@ -68,13 +68,13 @@ const indianProducts: Product[] = [
   },
 ];
 
-export const nepaleseProducts: Product[] = [
+export const indianSpecialtyProducts: Product[] = [
   {
     id: 101,
     name: '2PM Hot & Spicy Cracker',
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     description:
-      'Traditional fermented leafy greens — essential for Nepali gundruk soup and curries.',
+      'Traditional fermented leafy greens — essential for Indian gundruk soup and curries.',
     price: '4.99',
     discountedPrice: '3.99',
     discountPercent: 20,
@@ -85,9 +85,9 @@ export const nepaleseProducts: Product[] = [
   {
     id: 102,
     name: 'BB Red Label Tea',
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     description:
-      'Ready-to-use flour mix for authentic sel roti — a festive Nepali ring-shaped bread.',
+      'Ready-to-use flour mix for authentic sel roti — a festive Indian ring-shaped bread.',
     price: '3.49',
     discountPercent: 0,
     rating: 4.7,
@@ -97,9 +97,9 @@ export const nepaleseProducts: Product[] = [
   {
     id: 103,
     name: 'Birds Eye Chilli',
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     description:
-      'Combo pack of rice, lentils and spices for a classic Nepali dal bhat meal.',
+      'Combo pack of rice, lentils and spices for a classic Indian dal bhat meal.',
     price: '11.99',
     discountedPrice: '9.99',
     discountPercent: 17,
@@ -110,9 +110,9 @@ export const nepaleseProducts: Product[] = [
   {
     id: 104,
     name: 'CENTURY Momo Masala',
-    category: 'Nepalese Products',
+    category: 'Indian Products',
     description:
-      'Spicy and tangy Nepali pickle blend — perfect with dal bhat and snacks.',
+      'Spicy and tangy Indian pickle blend — perfect with dal bhat and snacks.',
     price: '3.99',
     discountPercent: 0,
     rating: 4.6,
@@ -202,8 +202,7 @@ export const freshVegetableProducts: Product[] = [
     id: 303,
     name: 'Green Chillies (200 g)',
     category: 'Fresh Vegetables',
-    description:
-      'Fresh green chillies for authentic heat in Indian and Nepali dishes.',
+    description: 'Fresh green chillies for authentic heat in Indian dishes.',
     price: '1.99',
     discountedPrice: '1.49',
     discountPercent: 25,
@@ -225,9 +224,114 @@ export const freshVegetableProducts: Product[] = [
   },
 ];
 
+export const newArrivalGroceries: Product[] = [
+  {
+    id: 401,
+    name: 'Daawat Basmati Rice 1 kg',
+    category: 'Rice & Grains',
+    description:
+      'Premium aged basmati rice with long grains — perfect for biryani and everyday meals.',
+    price: '14.99',
+    discountedPrice: '12.99',
+    discountPercent: 13,
+    rating: 4.8,
+    noOfRating: 124,
+    image: [images.productImgOne],
+  },
+  {
+    id: 402,
+    name: 'MDH Garam Masala 100 g',
+    category: 'Spices & Masalas',
+    description:
+      'Classic garam masala blend for curries, rice dishes and home cooking.',
+    price: '3.49',
+    discountPercent: 0,
+    rating: 4.9,
+    noOfRating: 89,
+    image: [images.productImgTwo],
+  },
+  {
+    id: 403,
+    name: 'Kala Chana 1 kg',
+    category: 'Lentils & Pulses',
+    description:
+      'Black chickpeas for chana masala, salads and protein-rich meals.',
+    price: '5.99',
+    discountedPrice: '4.99',
+    discountPercent: 17,
+    rating: 4.7,
+    noOfRating: 56,
+    image: [images.productImgThree],
+  },
+  {
+    id: 404,
+    name: 'Pakistani Honey Mangoes',
+    category: 'Fresh Food',
+    description:
+      'Sweet and juicy Pakistani honey mangoes — perfect for desserts, lassi and summer treats.',
+    price: '8.99',
+    discountPercent: 0,
+    rating: 4.6,
+    noOfRating: 42,
+    image: [images.productImgFour],
+  },
+];
+
+export const newArrivalFreshAsian: Product[] = [
+  {
+    id: 405,
+    name: 'Fresh Plantain (each)',
+    category: 'Fresh Vegetables',
+    description:
+      'Ripe plantain for frying, boiling and West African home cooking.',
+    price: '1.99',
+    discountPercent: 0,
+    rating: 4.8,
+    noOfRating: 74,
+    image: [images.categoryImgOne],
+  },
+  {
+    id: 406,
+    name: 'Fresh Coriander Bunch',
+    category: 'Fresh Vegetables',
+    description:
+      'Aromatic fresh coriander for curries, chutneys and garnishing.',
+    price: '1.49',
+    discountPercent: 0,
+    rating: 4.8,
+    noOfRating: 112,
+    image: [images.categoryImgTwo],
+  },
+  {
+    id: 407,
+    name: 'Thai Kitchen Red Curry Paste',
+    category: 'Asian Food',
+    description:
+      'Authentic Thai red curry paste for rich, aromatic curries in minutes.',
+    price: '2.99',
+    discountedPrice: '2.49',
+    discountPercent: 17,
+    rating: 4.7,
+    noOfRating: 61,
+    image: [images.productImgFive],
+  },
+  {
+    id: 408,
+    name: 'Jongga Kimchi 400 g',
+    category: 'Asian Food',
+    description:
+      'Spicy fermented kimchi — a favourite for Korean meals and side dishes.',
+    price: '5.99',
+    discountPercent: 0,
+    rating: 4.9,
+    noOfRating: 93,
+    image: [images.productImgSix],
+  },
+];
+
 export const products = [
   ...indianProducts,
-  ...nepaleseProducts,
+  ...indianSpecialtyProducts,
   ...asianProducts,
   ...freshVegetableProducts,
 ];
@@ -296,7 +400,10 @@ export const popularSnacks = repeatProducts(
   12
 );
 
-export const popularNepalese = repeatProducts(nepaleseProducts, 8);
+export const popularIndianSpecialty = repeatProducts(
+  indianSpecialtyProducts,
+  8
+);
 export const popularAsian = repeatProducts(asianProducts, 8);
 export const popularFreshVegetables = repeatProducts(freshVegetableProducts, 8);
 
@@ -328,7 +435,7 @@ export const categories = [
   { id: 4, label: 'Flours & Atta', value: 'flours-atta' },
   { id: 5, label: 'Pickles & Chutneys', value: 'pickles-chutneys' },
   { id: 6, label: 'Snacks & Namkeen', value: 'snacks-namkeen' },
-  { id: 7, label: 'Nepalese Products', value: 'nepalese-products' },
+  { id: 7, label: 'Indian Products', value: 'indian-products' },
   { id: 8, label: 'Asian Products', value: 'asian-products' },
   { id: 9, label: 'Fresh Vegetables', value: 'fresh-vegetables' },
 ];

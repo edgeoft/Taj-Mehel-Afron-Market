@@ -55,7 +55,7 @@ const ProductInfoSection = () => {
           >
             <Phone size={20} color={'#454545'} aria-hidden />
             <Text className="body-2" c={'#454545'}>
-              Namaste Indian Market
+              Taj Mehal Afro-Asian Market
             </Text>
           </Flex>
           <Flex
@@ -66,7 +66,7 @@ const ProductInfoSection = () => {
           >
             <Phone size={20} color={'#454545'} aria-hidden />
             <Text className="body-2" c={'#454545'}>
-              040 815 1341
+              044 3011077
             </Text>
           </Flex>
         </Flex>

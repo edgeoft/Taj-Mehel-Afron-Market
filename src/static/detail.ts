@@ -22,7 +22,7 @@ export const activeProductInfo = {
 };
 
 export const availableColors = [
-  { name: '1 kg', color: '#FF9933' },
+  { name: '1 kg', color: '#0D1F3D' },
   { name: '2 kg', color: '#138808' },
   { name: '5 kg', color: '#212121' },
 ];
@@ -58,12 +58,12 @@ export const productReviewData = [
     name: 'Rajesh Kumar',
     profile: images.productImgTwo,
     rating: 5,
-    review: `Finally found authentic Indian groceries in Helsinki! The quality is consistent and prices are fair. Namaste Indian Market is now my go-to store.`,
+    review: `Finally found authentic Afro-Asian groceries in Vantaa! The quality is consistent and prices are fair. Taj Mehal Afro-Asian Market is now my go-to store.`,
   },
   {
     name: 'Anita Patel',
     profile: images.productImgThree,
     rating: 4,
-    review: `Great selection of spices and staples. The team at Hakaniemi is very helpful. Highly recommend for anyone missing home flavours in Finland.`,
+    review: `Great selection of spices and groceries. The team at Tikkuraitti is very helpful. Highly recommend for anyone missing home flavours in Finland.`,
   },
 ];

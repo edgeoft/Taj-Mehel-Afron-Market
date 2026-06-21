@@ -131,7 +131,7 @@ const MegaMenu = () => {
                             href={`/categories/${item.slug}`}
                             rightSection={<CaretRight />}
                             variant="transparent"
-                            c={'#138808'}
+                            c={'#0D1F3D'}
                             className="navbar-bottom-button"
                           >
                             Shop Now

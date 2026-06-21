@@ -13,7 +13,7 @@ const ProductDesc = () => {
       direct sunlight. Once opened, transfer to an airtight container to
       preserve freshness. Suitable for vegetarian diets. A staple in every
       Indian kitchen — now available for delivery across Helsinki, Espoo, Vantaa
-      and Uusimaa from Namaste Indian Market.
+      and Uusimaa from Taj Mehal Afro-Asian Market.
     </Text>
   );
 };

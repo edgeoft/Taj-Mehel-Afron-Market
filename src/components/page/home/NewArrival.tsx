@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import { Container, Flex, SimpleGrid } from '@mantine/core';
 import SectionHeader from '@/components/common/section-header';
-import { products } from '@/static/product';
+import { newArrivalFreshAsian, newArrivalGroceries } from '@/static/product';
 import ProductCard from '@/components/common/card/ProductCard';
 import { newArrivalsTabs } from '@/static/home';
 
@@ -15,6 +15,12 @@ const NewArrivalsList = ({}: Props) => {
   const handleOptionChange = (option: string) => {
     setSelectedOption(option);
   };
+
+  const displayProducts =
+    selectedOption === 'fresh-asian'
+      ? newArrivalFreshAsian
+      : newArrivalGroceries;
+
   return (
     <Container className="padding-t-72">
       <Flex gap={{ base: 16, md: 24 }} direction={'column'}>
@@ -32,7 +38,7 @@ const NewArrivalsList = ({}: Props) => {
           spacing={16}
           verticalSpacing={24}
         >
-          {products.map((product) => (
+          {displayProducts.map((product) => (
             <ProductCard key={product?.id} product={product} />
           ))}
         </SimpleGrid>

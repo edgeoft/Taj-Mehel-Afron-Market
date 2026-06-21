@@ -1,9 +1,9 @@
 import { TNavbarMegaMenuItem } from '@/types/navbar';
 
 export const NAVBAR_DUMMY_OPT = [
+  { label: 'Vantaa', value: 'vantaa' },
   { label: 'Helsinki', value: 'helsinki' },
   { label: 'Espoo', value: 'espoo' },
-  { label: 'Vantaa', value: 'vantaa' },
   { label: 'Uusimaa', value: 'uusimaa' },
 ];
 
@@ -17,90 +17,80 @@ export const PROFILE_POPOVER_OPTIONS = [
 
 export const NAVBAR_MEGA_MENU: TNavbarMegaMenuItem[] = [
   {
-    title: 'Rice & Grains',
+    title: 'African Food',
+    slug: 'african-staples',
+    description:
+      'Plantain, yam, cassava, egusi, injera flour and other African groceries.',
+    subCategories: [
+      { title: 'Plantain & Yam' },
+      { title: 'Rice & Grains' },
+      { title: 'Egusi & Groundnut' },
+      { title: 'Spices & Seasonings' },
+      { title: 'Palm Oil & Sauces' },
+      { title: 'Frozen & Ready Meals' },
+    ],
+  },
+  {
+    title: 'Indian Food',
     slug: 'rice-grains',
     description:
-      'Premium basmati, sona masoori and everyday rice staples for your kitchen.',
+      'Basmati rice, lentils, flour, masalas and Indian groceries for home cooking.',
     subCategories: [
       { title: 'Basmati Rice' },
-      { title: 'Sona Masoori' },
-      { title: 'Poha & Rava' },
-      { title: 'Quinoa & Millet' },
-    ],
-  },
-  {
-    title: 'Lentils & Pulses',
-    slug: 'lentils-pulses',
-    description:
-      'Toor, moong, chana and more — essentials for dal, sambar and curries.',
-    subCategories: [
-      { title: 'Toor Dal' },
-      { title: 'Moong Dal' },
-      { title: 'Chana Dal' },
-      { title: 'Urad Dal' },
-      { title: 'Rajma & Chickpeas' },
-    ],
-  },
-  {
-    title: 'Spices & Masalas',
-    slug: 'spices-masalas',
-    description:
-      'Authentic whole spices, ground masalas and blends for Indian cooking.',
-    subCategories: [
-      { title: 'Whole Spices' },
-      { title: 'Ground Spices' },
-      { title: 'Garam Masala' },
-      { title: 'Curry Powders' },
-      { title: 'Spice Blends' },
-    ],
-  },
-  {
-    title: 'Snacks & More',
-    slug: 'snacks-more',
-    description:
-      'Namkeen, pickles, chai, dairy and festive items for every occasion.',
-    subCategories: [
-      { title: 'Namkeen & Bhujia' },
+      { title: 'Lentils & Pulses' },
+      { title: 'Flours & Atta' },
+      { title: 'Spices & Masalas' },
       { title: 'Pickles & Chutneys' },
-      { title: 'Beverages & Chai' },
-      { title: 'Dairy & Ghee' },
-      { title: 'Frozen & Ready-to-Eat' },
-      { title: 'Puja & Festive Items' },
-    ],
-  },
-  {
-    title: 'Nepalese Products',
-    slug: 'nepalese-products',
-    description:
-      'Authentic Nepali staples — gundruk, sel roti mix, dal bhat essentials and more.',
-    subCategories: [
-      { title: 'Gundruk & Sinki' },
-      { title: 'Dal Bhat Essentials' },
-      { title: 'Nepali Tea & Snacks' },
-      { title: 'Achar & Pickles' },
-      { title: 'Sel Roti Mix & Flours' },
       { title: 'Ghee & Dairy' },
     ],
   },
   {
-    title: 'Asian Products',
+    title: 'Asian Food',
     slug: 'asian-products',
     description:
-      'Pan-Asian groceries — Thai, Japanese, Korean, Chinese and more.',
+      'Groceries from Thailand, Japan, Korea, China and the Philippines.',
     subCategories: [
       { title: 'Thai Sauces & Pastes' },
       { title: 'Japanese Noodles & Rice' },
       { title: 'Korean Kimchi & Sauces' },
       { title: 'Chinese Spices & Oils' },
-      { title: 'Filipino Staples' },
+      { title: 'Filipino Food' },
       { title: 'Coconut Products' },
+    ],
+  },
+  {
+    title: 'Spices & Sauces',
+    slug: 'spices-masalas',
+    description:
+      'Whole spices, curry mixes, hot sauces and seasonings from Africa and Asia.',
+    subCategories: [
+      { title: 'Whole Spices' },
+      { title: 'Curry & Masala Mixes' },
+      { title: 'African Seasonings' },
+      { title: 'Asian Sauces & Pastes' },
+      { title: 'Chilli & Pepper' },
+      { title: 'Cooking Oils' },
+    ],
+  },
+  {
+    title: 'Snacks & Drinks',
+    slug: 'snacks-more',
+    description:
+      'Snacks, namkeen, tea, coffee, juices and treats from Africa and Asia.',
+    subCategories: [
+      { title: 'African Snacks' },
+      { title: 'Namkeen & Bhujia' },
+      { title: 'Asian Snacks & Noodles' },
+      { title: 'Tea & Coffee' },
+      { title: 'Juices & Soft Drinks' },
+      { title: 'Festive Items' },
     ],
   },
   {
     title: 'Fresh Vegetables',
     slug: 'fresh-vegetables',
     description:
-      'Farm-fresh produce delivered across Helsinki, Espoo, Vantaa and Uusimaa.',
+      'Fresh herbs, chillies, greens and vegetables from our store in Vantaa.',
     subCategories: [
       { title: 'Leafy Greens & Herbs' },
       { title: 'Root Vegetables' },
@@ -113,12 +103,14 @@ export const NAVBAR_MEGA_MENU: TNavbarMegaMenuItem[] = [
 ];
 
 export const SEARCH_SUGGESTIONS = [
+  { label: 'Plantain' },
   { label: 'Basmati Rice' },
-  { label: 'Gundruk' },
-  { label: 'Fresh Coriander' },
   { label: 'Garam Masala' },
   { label: 'Kimchi' },
-  { label: 'Sel Roti Mix' },
+  { label: 'Palm Oil' },
+  { label: 'Fresh Coriander' },
+  { label: 'Coconut Milk' },
+  { label: 'Egusi' },
 ];
 
 export const restrictedBottomNavRoutes = [

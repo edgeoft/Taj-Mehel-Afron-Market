@@ -49,7 +49,7 @@ const BottomLinks = () => {
               <Icon
                 size={24}
                 weight={isActive ? 'fill' : 'regular'}
-                color={isActive ? '#FF9933' : '#212121'}
+                color={isActive ? '#0D1F3D' : '#212121'}
               />
               <Text
                 className="navbar-bottomlinks-text"
