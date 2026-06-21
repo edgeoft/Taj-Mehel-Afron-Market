@@ -40,6 +40,10 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Taj Mehal Afro-Asian Market',
   },
+  // Favicon disabled — restore src/app/icon.png from src/assets/images/logo/favicon.png.disabled to re-enable
+  // icons: {
+  //   icon: '/favicon.ico',
+  // },
 };
 
 export default function RootLayout({
